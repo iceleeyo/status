@@ -1,0 +1,111 @@
+ERROR 12 八月 11:17:36,627 -(              MoDBRW.java: 125) - execSQL error
+com.microsoft.sqlserver.jdbc.SQLServerException: Unclosed quotation mark after the character string '                '.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.IOBuffer.processPackets(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.getPrepExecResponse(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PreparedStatementExecutionRequest.executeStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.CancelableRequest.execute(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeRequest(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeQuery(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeQuery(DelegatingPreparedStatement.java:92)
+	at util.MoDBRW.execSQL(MoDBRW.java:122)
+	at petEquiment.PetEquiment.getActionMonetidEquiment(PetEquiment.java:60)
+	at petEquiment.PetEquiment.insertEquipment(PetEquiment.java:205)
+	at petEquiment.PetEquiment.main(PetEquiment.java:230)
+ INFO 12 八月 11:17:36,627 -(              MoDBRW.java: 132) - execSQL: select monet_id,type_id from Equipment where monet_id in (select distinct monetid   from user_event  where server_date > ? and server_date < ?' =577
+ INFO 12 八月 11:17:37,126 -(              MoDBRW.java: 132) - execSQL: select id,type from EquipmentType =499
+ INFO 12 八月 11:17:38,219 -(              MoDBRW.java: 132) - execSQL: select ownerid,petLevel from pet =1077
+ERROR 12 八月 11:17:38,329 -(              MoDBRW.java: 125) - execSQL error
+com.microsoft.sqlserver.jdbc.SQLServerException: Unclosed quotation mark after the character string '                '.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.IOBuffer.processPackets(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.getPrepExecResponse(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PreparedStatementExecutionRequest.executeStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.CancelableRequest.execute(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeRequest(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeQuery(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeQuery(DelegatingPreparedStatement.java:92)
+	at util.MoDBRW.execSQL(MoDBRW.java:122)
+	at petEquiment.PetEquiment.getActionMonetidEquiment(PetEquiment.java:60)
+	at petEquiment.PetEquiment.insertEquipment(PetEquiment.java:210)
+	at petEquiment.PetEquiment.main(PetEquiment.java:230)
+ INFO 12 八月 11:17:38,329 -(              MoDBRW.java: 132) - execSQL: select monet_id,type_id from Equipment where monet_id in (select distinct monetid   from user_event  where server_date > ? and server_date < ?' =94
+ INFO 12 八月 11:17:38,502 -(              MoDBRW.java: 132) - execSQL: select id,type from EquipmentType =173
+ INFO 12 八月 11:17:39,126 -(              MoDBRW.java: 132) - execSQL: select ownerid,petLevel from pet =624
+ERROR 12 八月 11:18:24,771 -(              MoDBRW.java: 125) - execSQL error
+com.microsoft.sqlserver.jdbc.SQLServerException: Unclosed quotation mark after the character string ' )                '.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.IOBuffer.processPackets(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.getPrepExecResponse(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PreparedStatementExecutionRequest.executeStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.CancelableRequest.execute(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeRequest(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeQuery(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeQuery(DelegatingPreparedStatement.java:92)
+	at util.MoDBRW.execSQL(MoDBRW.java:122)
+	at petEquiment.PetEquiment.getActionMonetidEquiment(PetEquiment.java:60)
+	at petEquiment.PetEquiment.insertEquipment(PetEquiment.java:205)
+	at petEquiment.PetEquiment.main(PetEquiment.java:230)
+ INFO 12 八月 11:18:24,771 -(              MoDBRW.java: 132) - execSQL: select monet_id,type_id from Equipment where monet_id in (select distinct monetid   from user_event  where server_date > ? and server_date < ?' ) =514
+ INFO 12 八月 11:18:26,035 -(              MoDBRW.java: 132) - execSQL: select id,type from EquipmentType =1264
+ INFO 12 八月 11:18:27,518 -(              MoDBRW.java: 132) - execSQL: select ownerid,petLevel from pet =1483
+ERROR 12 八月 11:18:27,628 -(              MoDBRW.java: 125) - execSQL error
+com.microsoft.sqlserver.jdbc.SQLServerException: Unclosed quotation mark after the character string ' )                '.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.IOBuffer.processPackets(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.getPrepExecResponse(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PreparedStatementExecutionRequest.executeStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.CancelableRequest.execute(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeRequest(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeQuery(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeQuery(DelegatingPreparedStatement.java:92)
+	at util.MoDBRW.execSQL(MoDBRW.java:122)
+	at petEquiment.PetEquiment.getActionMonetidEquiment(PetEquiment.java:60)
+	at petEquiment.PetEquiment.insertEquipment(PetEquiment.java:210)
+	at petEquiment.PetEquiment.main(PetEquiment.java:230)
+ INFO 12 八月 11:18:27,628 -(              MoDBRW.java: 132) - execSQL: select monet_id,type_id from Equipment where monet_id in (select distinct monetid   from user_event  where server_date > ? and server_date < ?' ) =94
+ INFO 12 八月 11:18:27,832 -(              MoDBRW.java: 132) - execSQL: select id,type from EquipmentType =204
+ INFO 12 八月 11:18:28,799 -(              MoDBRW.java: 132) - execSQL: select ownerid,petLevel from pet =967
+ERROR 12 八月 11:19:37,565 -(              MoDBRW.java: 125) - execSQL error
+com.microsoft.sqlserver.jdbc.SQLServerException: Unclosed quotation mark after the character string ' )                '.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.IOBuffer.processPackets(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.getPrepExecResponse(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PreparedStatementExecutionRequest.executeStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.CancelableRequest.execute(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeRequest(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeQuery(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeQuery(DelegatingPreparedStatement.java:92)
+	at util.MoDBRW.execSQL(MoDBRW.java:122)
+	at petEquiment.PetEquiment.getActionMonetidEquiment(PetEquiment.java:60)
+	at petEquiment.PetEquiment.insertEquipment(PetEquiment.java:205)
+	at petEquiment.PetEquiment.main(PetEquiment.java:230)
+ INFO 12 八月 11:19:37,565 -(              MoDBRW.java: 132) - execSQL: select monet_id,type_id from Equipment where monet_id in (select distinct monetid   from user_event  where server_date > ? and server_date < ?' ) =561
+ INFO 12 八月 11:19:38,766 -(              MoDBRW.java: 132) - execSQL: select id,type from EquipmentType =1185
+ INFO 12 八月 11:19:40,733 -(              MoDBRW.java: 132) - execSQL: select ownerid,petLevel from pet =1967
+ INFO 12 八月 11:19:42,232 -(              MoDBRW.java: 132) - execSQL: select monet_id,type_id from Equipment =1483
+ INFO 12 八月 11:19:42,935 -(              MoDBRW.java: 132) - execSQL: select id,type from EquipmentType =671
+ INFO 12 八月 11:19:44,417 -(              MoDBRW.java: 132) - execSQL: select ownerid,petLevel from pet =1482
+ INFO 12 八月 11:20:19,550 -(              MoDBRW.java: 132) - execSQL: select monet_id,type_id from Equipment where monet_id in (select distinct monetid   from user_event  where server_date > ? and server_date < ? ) =687
+ INFO 12 八月 11:20:20,330 -(              MoDBRW.java: 132) - execSQL: select id,type from EquipmentType =780
+ INFO 12 八月 11:20:21,298 -(              MoDBRW.java: 132) - execSQL: select ownerid,petLevel from pet =968
+ INFO 12 八月 11:20:22,078 -(              MoDBRW.java: 132) - execSQL: select monet_id,type_id from Equipment =764
+ INFO 12 八月 11:20:22,932 -(              MoDBRW.java: 132) - execSQL: select id,type from EquipmentType =811
+ INFO 12 八月 11:20:23,744 -(              MoDBRW.java: 132) - execSQL: select ownerid,petLevel from pet =796
+ INFO 12 八月 11:23:36,515 -(              MoDBRW.java: 132) - execSQL: select monet_id,type_id from Equipment where monet_id in (select distinct monetid   from user_event  where server_date > ? and server_date < ? ) =671
+ INFO 12 八月 11:23:37,061 -(              MoDBRW.java: 132) - execSQL: select id,type from EquipmentType =546
+ INFO 12 八月 11:23:38,373 -(              MoDBRW.java: 132) - execSQL: select ownerid,petLevel from pet =1312
+ INFO 12 八月 11:23:39,528 -(              MoDBRW.java: 132) - execSQL: select monet_id,type_id from Equipment =1140
+ INFO 12 八月 11:23:39,763 -(              MoDBRW.java: 132) - execSQL: select id,type from EquipmentType =204
+ INFO 12 八月 11:23:40,434 -(              MoDBRW.java: 132) - execSQL: select ownerid,petLevel from pet =671
+ INFO 12 八月 11:28:33,233 -(              MoDBRW.java: 132) - execSQL: select monet_id,type_id from Equipment where monet_id in (select distinct monetid   from user_event  where server_date > ? and server_date < ? ) =2106
+ INFO 12 八月 11:28:33,858 -(              MoDBRW.java: 132) - execSQL: select id,type from EquipmentType =593
+ INFO 12 八月 11:28:34,544 -(              MoDBRW.java: 132) - execSQL: select ownerid,petLevel from pet =686
+ INFO 12 八月 11:28:35,372 -(              MoDBRW.java: 132) - execSQL: select monet_id,type_id from Equipment =812
+ INFO 12 八月 11:28:35,668 -(              MoDBRW.java: 132) - execSQL: select id,type from EquipmentType =249
+ INFO 12 八月 11:28:36,543 -(              MoDBRW.java: 132) - execSQL: select ownerid,petLevel from pet =859

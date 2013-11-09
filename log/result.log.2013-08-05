@@ -1,0 +1,29 @@
+ INFO 05 八月 17:35:08,816 -(       myCreditStats.java:  52) - Credit sales start Mon Aug 05 17:35:08 CST 2013
+ERROR 05 八月 17:35:29,923 -(              MoDBRW.java: 179) - execSQLQuery db(0) error
+com.microsoft.sqlserver.jdbc.SQLServerException: 到主机  的 TCP/IP 连接失败。 java.net.ConnectException: Connection timed out: connect
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDriverError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connectHelper(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.loginWithoutFailover(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connect(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerDriver.connect(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at org.apache.commons.dbcp.DriverManagerConnectionFactory.createConnection(DriverManagerConnectionFactory.java:46)
+	at org.apache.commons.dbcp.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:290)
+	at org.apache.commons.pool.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:771)
+	at org.apache.commons.dbcp.PoolingDriver.connect(PoolingDriver.java:175)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at util.MoDB.getConnection(MoDB.java:54)
+	at util.MoDBRW.doExecSQLQuery(MoDBRW.java:144)
+	at util.MoDBRW.execSQLQuery(MoDBRW.java:175)
+	at util.MoDBRW.execSQLQuery(MoDBRW.java:208)
+	at util.NewLogUtil.getNameMapItemLog(NewLogUtil.java:167)
+	at basicStats.myCreditStats.StartStats2(myCreditStats.java:56)
+	at basicStats.myCreditStats.main(myCreditStats.java:214)
+ERROR 05 八月 17:35:29,923 -(          NewLogUtil.java: 174) - getNameMap 
+java.lang.NullPointerException
+	at util.NewLogUtil.getNameMapItemLog(NewLogUtil.java:170)
+	at basicStats.myCreditStats.StartStats2(myCreditStats.java:56)
+	at basicStats.myCreditStats.main(myCreditStats.java:214)
+ INFO 05 八月 17:35:29,923 -(       myCreditStats.java: 136) - Credit sales end Mon Aug 05 17:35:29 CST 2013

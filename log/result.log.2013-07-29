@@ -1,0 +1,499 @@
+ERROR 29 七月 11:47:08,888 -(              MoDBRW.java: 229) - execSQLUpdate error
+com.microsoft.sqlserver.jdbc.SQLServerException: 到主机  的 TCP/IP 连接失败。 java.net.ConnectException: Connection timed out: connect
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDriverError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connectHelper(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.loginWithoutFailover(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connect(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerDriver.connect(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at org.apache.commons.dbcp.DriverManagerConnectionFactory.createConnection(DriverManagerConnectionFactory.java:46)
+	at org.apache.commons.dbcp.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:290)
+	at org.apache.commons.pool.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:771)
+	at org.apache.commons.dbcp.PoolingDriver.connect(PoolingDriver.java:175)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at util.MoDB.getConnection(MoDB.java:54)
+	at util.MoDBRW.execSQLUpdate(MoDBRW.java:219)
+	at egypt.GetEgyptUserInfo.insertToEgypt(GetEgyptUserInfo.java:27)
+	at egypt.GetEgyptUserInfo.main(GetEgyptUserInfo.java:179)
+ INFO 29 七月 11:47:08,888 -(              MoDBRW.java: 234) - execSQLUpdate: insert into egypt_user(edate,egkey,egvalue) values(?,?,?) =21045
+ERROR 29 七月 11:47:29,917 -(              MoDBRW.java: 229) - execSQLUpdate error
+com.microsoft.sqlserver.jdbc.SQLServerException: 到主机  的 TCP/IP 连接失败。 java.net.ConnectException: Connection timed out: connect
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDriverError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connectHelper(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.loginWithoutFailover(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connect(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerDriver.connect(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at org.apache.commons.dbcp.DriverManagerConnectionFactory.createConnection(DriverManagerConnectionFactory.java:46)
+	at org.apache.commons.dbcp.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:290)
+	at org.apache.commons.pool.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:771)
+	at org.apache.commons.dbcp.PoolingDriver.connect(PoolingDriver.java:175)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at util.MoDB.getConnection(MoDB.java:54)
+	at util.MoDBRW.execSQLUpdate(MoDBRW.java:219)
+	at egypt.GetEgyptUserInfo.insertToEgypt(GetEgyptUserInfo.java:31)
+	at egypt.GetEgyptUserInfo.main(GetEgyptUserInfo.java:179)
+ INFO 29 七月 11:47:29,917 -(              MoDBRW.java: 234) - execSQLUpdate: insert into egypt_user(edate,egkey,egvalue) values(?,?,?) =21029
+ERROR 29 七月 11:47:50,916 -(              MoDBRW.java: 229) - execSQLUpdate error
+com.microsoft.sqlserver.jdbc.SQLServerException: 到主机  的 TCP/IP 连接失败。 java.net.ConnectException: Connection timed out: connect
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDriverError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connectHelper(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.loginWithoutFailover(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connect(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerDriver.connect(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at org.apache.commons.dbcp.DriverManagerConnectionFactory.createConnection(DriverManagerConnectionFactory.java:46)
+	at org.apache.commons.dbcp.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:290)
+	at org.apache.commons.pool.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:771)
+	at org.apache.commons.dbcp.PoolingDriver.connect(PoolingDriver.java:175)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at util.MoDB.getConnection(MoDB.java:54)
+	at util.MoDBRW.execSQLUpdate(MoDBRW.java:219)
+	at egypt.GetEgyptUserInfo.insertToEgypt(GetEgyptUserInfo.java:35)
+	at egypt.GetEgyptUserInfo.main(GetEgyptUserInfo.java:179)
+ INFO 29 七月 11:47:50,916 -(              MoDBRW.java: 234) - execSQLUpdate: insert into egypt_user(edate,egkey,egvalue) values(?,?,?) =20999
+ERROR 29 七月 11:48:11,946 -(              MoDBRW.java: 229) - execSQLUpdate error
+com.microsoft.sqlserver.jdbc.SQLServerException: 到主机  的 TCP/IP 连接失败。 java.net.ConnectException: Connection timed out: connect
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDriverError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connectHelper(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.loginWithoutFailover(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connect(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerDriver.connect(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at org.apache.commons.dbcp.DriverManagerConnectionFactory.createConnection(DriverManagerConnectionFactory.java:46)
+	at org.apache.commons.dbcp.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:290)
+	at org.apache.commons.pool.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:771)
+	at org.apache.commons.dbcp.PoolingDriver.connect(PoolingDriver.java:175)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at util.MoDB.getConnection(MoDB.java:54)
+	at util.MoDBRW.execSQLUpdate(MoDBRW.java:219)
+	at egypt.GetEgyptUserInfo.insertToEgypt(GetEgyptUserInfo.java:39)
+	at egypt.GetEgyptUserInfo.main(GetEgyptUserInfo.java:179)
+ INFO 29 七月 11:48:11,946 -(              MoDBRW.java: 234) - execSQLUpdate: insert into egypt_user(edate,egkey,egvalue) values(?,?,?) =21030
+ERROR 29 七月 11:48:32,991 -(              MoDBRW.java: 229) - execSQLUpdate error
+com.microsoft.sqlserver.jdbc.SQLServerException: 到主机  的 TCP/IP 连接失败。 java.net.ConnectException: Connection timed out: connect
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDriverError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connectHelper(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.loginWithoutFailover(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connect(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerDriver.connect(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at org.apache.commons.dbcp.DriverManagerConnectionFactory.createConnection(DriverManagerConnectionFactory.java:46)
+	at org.apache.commons.dbcp.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:290)
+	at org.apache.commons.pool.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:771)
+	at org.apache.commons.dbcp.PoolingDriver.connect(PoolingDriver.java:175)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at util.MoDB.getConnection(MoDB.java:54)
+	at util.MoDBRW.execSQLUpdate(MoDBRW.java:219)
+	at egypt.GetEgyptUserInfo.insertToEgypt(GetEgyptUserInfo.java:43)
+	at egypt.GetEgyptUserInfo.main(GetEgyptUserInfo.java:179)
+ INFO 29 七月 11:48:32,991 -(              MoDBRW.java: 234) - execSQLUpdate: insert into egypt_user(edate,egkey,egvalue) values(?,?,?) =21045
+ INFO 29 七月 11:49:25,971 -(              MoDBRW.java: 234) - execSQLUpdate: insert into egypt_user(edate,egkey,egvalue) values(?,?,?) =874
+ INFO 29 七月 11:49:26,580 -(              MoDBRW.java: 234) - execSQLUpdate: insert into egypt_user(edate,egkey,egvalue) values(?,?,?) =609
+ INFO 29 七月 11:49:26,877 -(              MoDBRW.java: 234) - execSQLUpdate: insert into egypt_user(edate,egkey,egvalue) values(?,?,?) =297
+ INFO 29 七月 11:49:27,189 -(              MoDBRW.java: 234) - execSQLUpdate: insert into egypt_user(edate,egkey,egvalue) values(?,?,?) =312
+ INFO 29 七月 11:49:27,393 -(              MoDBRW.java: 234) - execSQLUpdate: insert into egypt_user(edate,egkey,egvalue) values(?,?,?) =204
+ INFO 29 七月 11:49:27,611 -(              MoDBRW.java: 234) - execSQLUpdate: insert into egypt_user(edate,egkey,egvalue) values(?,?,?) =218
+ INFO 29 七月 13:57:11,419 -(              MoDBRW.java: 234) - execSQLUpdate: insert into egypt_user(edate,egkey,egvalue) values(?,?,?) =562
+ INFO 29 七月 13:57:11,607 -(              MoDBRW.java: 234) - execSQLUpdate: insert into egypt_user(edate,egkey,egvalue) values(?,?,?) =173
+ INFO 29 七月 13:57:11,810 -(              MoDBRW.java: 234) - execSQLUpdate: insert into egypt_user(edate,egkey,egvalue) values(?,?,?) =203
+ INFO 29 七月 13:57:12,012 -(              MoDBRW.java: 234) - execSQLUpdate: insert into egypt_user(edate,egkey,egvalue) values(?,?,?) =202
+ INFO 29 七月 13:57:12,200 -(              MoDBRW.java: 234) - execSQLUpdate: insert into egypt_user(edate,egkey,egvalue) values(?,?,?) =188
+ INFO 29 七月 13:57:12,402 -(              MoDBRW.java: 234) - execSQLUpdate: insert into egypt_user(edate,egkey,egvalue) values(?,?,?) =202
+ INFO 29 七月 14:02:36,230 -(              MoDBRW.java: 234) - execSQLUpdate: insert into egypt_user(edate,egkey,egvalue) values(?,?,?) =780
+ INFO 29 七月 14:02:36,434 -(              MoDBRW.java: 234) - execSQLUpdate: insert into egypt_user(edate,egkey,egvalue) values(?,?,?) =204
+ INFO 29 七月 14:02:36,605 -(              MoDBRW.java: 234) - execSQLUpdate: insert into egypt_user(edate,egkey,egvalue) values(?,?,?) =171
+ INFO 29 七月 14:02:36,792 -(              MoDBRW.java: 234) - execSQLUpdate: insert into egypt_user(edate,egkey,egvalue) values(?,?,?) =187
+ INFO 29 七月 14:02:36,980 -(              MoDBRW.java: 234) - execSQLUpdate: insert into egypt_user(edate,egkey,egvalue) values(?,?,?) =188
+ INFO 29 七月 14:02:37,198 -(              MoDBRW.java: 234) - execSQLUpdate: insert into egypt_user(edate,egkey,egvalue) values(?,?,?) =218
+ERROR 29 七月 14:05:51,312 -(              MoDBRW.java: 179) - execSQLQuery db(0) error
+com.microsoft.sqlserver.jdbc.SQLServerException: Arithmetic overflow error converting expression to data type datetime.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.IOBuffer.processPackets(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.buildNextRowset(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.getPrepExecResponse(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PreparedStatementExecutionRequest.executeStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.CancelableRequest.execute(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeRequest(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeQuery(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeQuery(DelegatingPreparedStatement.java:92)
+	at util.MoDBRW.doExecSQLQuery(MoDBRW.java:154)
+	at util.MoDBRW.execSQLQuery(MoDBRW.java:175)
+	at util.MoDBRW.execSQLQuery(MoDBRW.java:208)
+	at egypt.GetEgyptUserInfo.getInfo(GetEgyptUserInfo.java:75)
+	at egypt.GetEgyptUserInfo.insertToEgypt(GetEgyptUserInfo.java:18)
+	at egypt.GetEgyptUserInfo.main(GetEgyptUserInfo.java:181)
+ERROR 29 七月 14:05:51,312 -(    GetEgyptUserInfo.java:  82) - getInfo
+java.lang.NullPointerException
+	at egypt.GetEgyptUserInfo.getInfo(GetEgyptUserInfo.java:78)
+	at egypt.GetEgyptUserInfo.insertToEgypt(GetEgyptUserInfo.java:18)
+	at egypt.GetEgyptUserInfo.main(GetEgyptUserInfo.java:181)
+ERROR 29 七月 14:05:51,500 -(              MoDBRW.java: 179) - execSQLQuery db(0) error
+com.microsoft.sqlserver.jdbc.SQLServerException: Arithmetic overflow error converting expression to data type datetime.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.IOBuffer.processPackets(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.buildNextRowset(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.getPrepExecResponse(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PreparedStatementExecutionRequest.executeStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.CancelableRequest.execute(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeRequest(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeQuery(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeQuery(DelegatingPreparedStatement.java:92)
+	at util.MoDBRW.doExecSQLQuery(MoDBRW.java:154)
+	at util.MoDBRW.execSQLQuery(MoDBRW.java:175)
+	at util.MoDBRW.execSQLQuery(MoDBRW.java:208)
+	at egypt.GetEgyptUserInfo.getInfo(GetEgyptUserInfo.java:91)
+	at egypt.GetEgyptUserInfo.insertToEgypt(GetEgyptUserInfo.java:18)
+	at egypt.GetEgyptUserInfo.main(GetEgyptUserInfo.java:181)
+ERROR 29 七月 14:05:51,500 -(    GetEgyptUserInfo.java:  98) - getInfo
+java.lang.NullPointerException
+	at egypt.GetEgyptUserInfo.getInfo(GetEgyptUserInfo.java:94)
+	at egypt.GetEgyptUserInfo.insertToEgypt(GetEgyptUserInfo.java:18)
+	at egypt.GetEgyptUserInfo.main(GetEgyptUserInfo.java:181)
+ERROR 29 七月 14:05:52,592 -(              MoDBRW.java: 179) - execSQLQuery db(0) error
+com.microsoft.sqlserver.jdbc.SQLServerException: Arithmetic overflow error converting expression to data type datetime.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.IOBuffer.processPackets(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.buildNextRowset(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.getPrepExecResponse(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PreparedStatementExecutionRequest.executeStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.CancelableRequest.execute(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeRequest(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeQuery(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeQuery(DelegatingPreparedStatement.java:92)
+	at util.MoDBRW.doExecSQLQuery(MoDBRW.java:154)
+	at util.MoDBRW.execSQLQuery(MoDBRW.java:175)
+	at util.MoDBRW.execSQLQuery(MoDBRW.java:208)
+	at egypt.GetEgyptUserInfo.getInfo(GetEgyptUserInfo.java:106)
+	at egypt.GetEgyptUserInfo.insertToEgypt(GetEgyptUserInfo.java:18)
+	at egypt.GetEgyptUserInfo.main(GetEgyptUserInfo.java:181)
+ERROR 29 七月 14:05:52,592 -(    GetEgyptUserInfo.java: 113) - getInfo
+java.lang.NullPointerException
+	at egypt.GetEgyptUserInfo.getInfo(GetEgyptUserInfo.java:109)
+	at egypt.GetEgyptUserInfo.insertToEgypt(GetEgyptUserInfo.java:18)
+	at egypt.GetEgyptUserInfo.main(GetEgyptUserInfo.java:181)
+ERROR 29 七月 14:05:52,765 -(              MoDBRW.java: 179) - execSQLQuery db(0) error
+com.microsoft.sqlserver.jdbc.SQLServerException: Arithmetic overflow error converting expression to data type datetime.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.IOBuffer.processPackets(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.buildNextRowset(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.getPrepExecResponse(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PreparedStatementExecutionRequest.executeStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.CancelableRequest.execute(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeRequest(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeQuery(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeQuery(DelegatingPreparedStatement.java:92)
+	at util.MoDBRW.doExecSQLQuery(MoDBRW.java:154)
+	at util.MoDBRW.execSQLQuery(MoDBRW.java:175)
+	at util.MoDBRW.execSQLQuery(MoDBRW.java:208)
+	at egypt.GetEgyptUserInfo.getInfo(GetEgyptUserInfo.java:121)
+	at egypt.GetEgyptUserInfo.insertToEgypt(GetEgyptUserInfo.java:18)
+	at egypt.GetEgyptUserInfo.main(GetEgyptUserInfo.java:181)
+ERROR 29 七月 14:05:52,765 -(    GetEgyptUserInfo.java: 128) - getInfo
+java.lang.NullPointerException
+	at egypt.GetEgyptUserInfo.getInfo(GetEgyptUserInfo.java:124)
+	at egypt.GetEgyptUserInfo.insertToEgypt(GetEgyptUserInfo.java:18)
+	at egypt.GetEgyptUserInfo.main(GetEgyptUserInfo.java:181)
+ERROR 29 七月 14:05:52,968 -(              MoDBRW.java: 179) - execSQLQuery db(0) error
+com.microsoft.sqlserver.jdbc.SQLServerException: Arithmetic overflow error converting expression to data type datetime.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.IOBuffer.processPackets(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.buildNextRowset(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.getPrepExecResponse(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PreparedStatementExecutionRequest.executeStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.CancelableRequest.execute(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeRequest(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeQuery(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeQuery(DelegatingPreparedStatement.java:92)
+	at util.MoDBRW.doExecSQLQuery(MoDBRW.java:154)
+	at util.MoDBRW.execSQLQuery(MoDBRW.java:175)
+	at util.MoDBRW.execSQLQuery(MoDBRW.java:208)
+	at egypt.GetEgyptUserInfo.getInfo(GetEgyptUserInfo.java:136)
+	at egypt.GetEgyptUserInfo.insertToEgypt(GetEgyptUserInfo.java:18)
+	at egypt.GetEgyptUserInfo.main(GetEgyptUserInfo.java:181)
+ERROR 29 七月 14:05:52,968 -(    GetEgyptUserInfo.java: 143) - getInfo
+java.lang.NullPointerException
+	at egypt.GetEgyptUserInfo.getInfo(GetEgyptUserInfo.java:139)
+	at egypt.GetEgyptUserInfo.insertToEgypt(GetEgyptUserInfo.java:18)
+	at egypt.GetEgyptUserInfo.main(GetEgyptUserInfo.java:181)
+ INFO 29 七月 14:05:53,545 -(              MoDBRW.java: 234) - execSQLUpdate: insert into egypt_user(edate,egkey,egvalue) values(?,?,?) =577
+ INFO 29 七月 14:05:53,732 -(              MoDBRW.java: 234) - execSQLUpdate: insert into egypt_user(edate,egkey,egvalue) values(?,?,?) =187
+ INFO 29 七月 14:05:53,920 -(              MoDBRW.java: 234) - execSQLUpdate: insert into egypt_user(edate,egkey,egvalue) values(?,?,?) =188
+ INFO 29 七月 14:05:54,107 -(              MoDBRW.java: 234) - execSQLUpdate: insert into egypt_user(edate,egkey,egvalue) values(?,?,?) =187
+ INFO 29 七月 14:05:54,279 -(              MoDBRW.java: 234) - execSQLUpdate: insert into egypt_user(edate,egkey,egvalue) values(?,?,?) =172
+ INFO 29 七月 14:05:54,482 -(              MoDBRW.java: 234) - execSQLUpdate: insert into egypt_user(edate,egkey,egvalue) values(?,?,?) =203
+ERROR 29 七月 14:07:10,034 -(              MoDBRW.java: 179) - execSQLQuery db(0) error
+com.microsoft.sqlserver.jdbc.SQLServerException: Arithmetic overflow error converting expression to data type datetime.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.IOBuffer.processPackets(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.buildNextRowset(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.getPrepExecResponse(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PreparedStatementExecutionRequest.executeStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.CancelableRequest.execute(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeRequest(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeQuery(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeQuery(DelegatingPreparedStatement.java:92)
+	at util.MoDBRW.doExecSQLQuery(MoDBRW.java:154)
+	at util.MoDBRW.execSQLQuery(MoDBRW.java:175)
+	at util.MoDBRW.execSQLQuery(MoDBRW.java:208)
+	at egypt.GetEgyptUserInfo.getInfo(GetEgyptUserInfo.java:76)
+	at egypt.GetEgyptUserInfo.insertToEgypt(GetEgyptUserInfo.java:18)
+	at egypt.GetEgyptUserInfo.main(GetEgyptUserInfo.java:182)
+ERROR 29 七月 14:07:10,034 -(    GetEgyptUserInfo.java:  83) - getInfo
+java.lang.NullPointerException
+	at egypt.GetEgyptUserInfo.getInfo(GetEgyptUserInfo.java:79)
+	at egypt.GetEgyptUserInfo.insertToEgypt(GetEgyptUserInfo.java:18)
+	at egypt.GetEgyptUserInfo.main(GetEgyptUserInfo.java:182)
+ERROR 29 七月 14:07:10,331 -(              MoDBRW.java: 179) - execSQLQuery db(0) error
+com.microsoft.sqlserver.jdbc.SQLServerException: Arithmetic overflow error converting expression to data type datetime.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.IOBuffer.processPackets(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.buildNextRowset(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.getPrepExecResponse(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PreparedStatementExecutionRequest.executeStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.CancelableRequest.execute(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeRequest(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeQuery(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeQuery(DelegatingPreparedStatement.java:92)
+	at util.MoDBRW.doExecSQLQuery(MoDBRW.java:154)
+	at util.MoDBRW.execSQLQuery(MoDBRW.java:175)
+	at util.MoDBRW.execSQLQuery(MoDBRW.java:208)
+	at egypt.GetEgyptUserInfo.getInfo(GetEgyptUserInfo.java:92)
+	at egypt.GetEgyptUserInfo.insertToEgypt(GetEgyptUserInfo.java:18)
+	at egypt.GetEgyptUserInfo.main(GetEgyptUserInfo.java:182)
+ERROR 29 七月 14:07:10,331 -(    GetEgyptUserInfo.java:  99) - getInfo
+java.lang.NullPointerException
+	at egypt.GetEgyptUserInfo.getInfo(GetEgyptUserInfo.java:95)
+	at egypt.GetEgyptUserInfo.insertToEgypt(GetEgyptUserInfo.java:18)
+	at egypt.GetEgyptUserInfo.main(GetEgyptUserInfo.java:182)
+ERROR 29 七月 14:07:11,033 -(              MoDBRW.java: 179) - execSQLQuery db(0) error
+com.microsoft.sqlserver.jdbc.SQLServerException: Arithmetic overflow error converting expression to data type datetime.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.IOBuffer.processPackets(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.buildNextRowset(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.getPrepExecResponse(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PreparedStatementExecutionRequest.executeStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.CancelableRequest.execute(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeRequest(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeQuery(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeQuery(DelegatingPreparedStatement.java:92)
+	at util.MoDBRW.doExecSQLQuery(MoDBRW.java:154)
+	at util.MoDBRW.execSQLQuery(MoDBRW.java:175)
+	at util.MoDBRW.execSQLQuery(MoDBRW.java:208)
+	at egypt.GetEgyptUserInfo.getInfo(GetEgyptUserInfo.java:107)
+	at egypt.GetEgyptUserInfo.insertToEgypt(GetEgyptUserInfo.java:18)
+	at egypt.GetEgyptUserInfo.main(GetEgyptUserInfo.java:182)
+ERROR 29 七月 14:07:11,049 -(    GetEgyptUserInfo.java: 114) - getInfo
+java.lang.NullPointerException
+	at egypt.GetEgyptUserInfo.getInfo(GetEgyptUserInfo.java:110)
+	at egypt.GetEgyptUserInfo.insertToEgypt(GetEgyptUserInfo.java:18)
+	at egypt.GetEgyptUserInfo.main(GetEgyptUserInfo.java:182)
+ERROR 29 七月 14:07:11,455 -(              MoDBRW.java: 179) - execSQLQuery db(0) error
+com.microsoft.sqlserver.jdbc.SQLServerException: Arithmetic overflow error converting expression to data type datetime.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.IOBuffer.processPackets(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.buildNextRowset(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.getPrepExecResponse(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PreparedStatementExecutionRequest.executeStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.CancelableRequest.execute(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeRequest(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeQuery(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeQuery(DelegatingPreparedStatement.java:92)
+	at util.MoDBRW.doExecSQLQuery(MoDBRW.java:154)
+	at util.MoDBRW.execSQLQuery(MoDBRW.java:175)
+	at util.MoDBRW.execSQLQuery(MoDBRW.java:208)
+	at egypt.GetEgyptUserInfo.getInfo(GetEgyptUserInfo.java:122)
+	at egypt.GetEgyptUserInfo.insertToEgypt(GetEgyptUserInfo.java:18)
+	at egypt.GetEgyptUserInfo.main(GetEgyptUserInfo.java:182)
+ERROR 29 七月 14:07:11,455 -(    GetEgyptUserInfo.java: 129) - getInfo
+java.lang.NullPointerException
+	at egypt.GetEgyptUserInfo.getInfo(GetEgyptUserInfo.java:125)
+	at egypt.GetEgyptUserInfo.insertToEgypt(GetEgyptUserInfo.java:18)
+	at egypt.GetEgyptUserInfo.main(GetEgyptUserInfo.java:182)
+ERROR 29 七月 14:07:11,721 -(              MoDBRW.java: 179) - execSQLQuery db(0) error
+com.microsoft.sqlserver.jdbc.SQLServerException: Arithmetic overflow error converting expression to data type datetime.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.IOBuffer.processPackets(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.buildNextRowset(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.getPrepExecResponse(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PreparedStatementExecutionRequest.executeStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.CancelableRequest.execute(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeRequest(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeQuery(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeQuery(DelegatingPreparedStatement.java:92)
+	at util.MoDBRW.doExecSQLQuery(MoDBRW.java:154)
+	at util.MoDBRW.execSQLQuery(MoDBRW.java:175)
+	at util.MoDBRW.execSQLQuery(MoDBRW.java:208)
+	at egypt.GetEgyptUserInfo.getInfo(GetEgyptUserInfo.java:137)
+	at egypt.GetEgyptUserInfo.insertToEgypt(GetEgyptUserInfo.java:18)
+	at egypt.GetEgyptUserInfo.main(GetEgyptUserInfo.java:182)
+ERROR 29 七月 14:07:11,721 -(    GetEgyptUserInfo.java: 144) - getInfo
+java.lang.NullPointerException
+	at egypt.GetEgyptUserInfo.getInfo(GetEgyptUserInfo.java:140)
+	at egypt.GetEgyptUserInfo.insertToEgypt(GetEgyptUserInfo.java:18)
+	at egypt.GetEgyptUserInfo.main(GetEgyptUserInfo.java:182)
+ INFO 29 七月 14:07:13,655 -(              MoDBRW.java: 234) - execSQLUpdate: insert into egypt_user(edate,egkey,egvalue) values(?,?,?) =1934
+ INFO 29 七月 14:07:13,874 -(              MoDBRW.java: 234) - execSQLUpdate: insert into egypt_user(edate,egkey,egvalue) values(?,?,?) =219
+ INFO 29 七月 14:07:14,186 -(              MoDBRW.java: 234) - execSQLUpdate: insert into egypt_user(edate,egkey,egvalue) values(?,?,?) =312
+ INFO 29 七月 14:07:14,545 -(              MoDBRW.java: 234) - execSQLUpdate: insert into egypt_user(edate,egkey,egvalue) values(?,?,?) =359
+ INFO 29 七月 14:07:14,748 -(              MoDBRW.java: 234) - execSQLUpdate: insert into egypt_user(edate,egkey,egvalue) values(?,?,?) =203
+ INFO 29 七月 14:07:15,045 -(              MoDBRW.java: 234) - execSQLUpdate: insert into egypt_user(edate,egkey,egvalue) values(?,?,?) =297
+ INFO 29 七月 14:08:48,007 -(              MoDBRW.java: 234) - execSQLUpdate: insert into egypt_user(edate,egkey,egvalue) values(?,?,?) =624
+ INFO 29 七月 14:08:48,180 -(              MoDBRW.java: 234) - execSQLUpdate: insert into egypt_user(edate,egkey,egvalue) values(?,?,?) =173
+ INFO 29 七月 14:08:48,351 -(              MoDBRW.java: 234) - execSQLUpdate: insert into egypt_user(edate,egkey,egvalue) values(?,?,?) =171
+ INFO 29 七月 14:08:48,538 -(              MoDBRW.java: 234) - execSQLUpdate: insert into egypt_user(edate,egkey,egvalue) values(?,?,?) =187
+ INFO 29 七月 14:08:49,240 -(              MoDBRW.java: 234) - execSQLUpdate: insert into egypt_user(edate,egkey,egvalue) values(?,?,?) =702
+ INFO 29 七月 14:08:49,444 -(              MoDBRW.java: 234) - execSQLUpdate: insert into egypt_user(edate,egkey,egvalue) values(?,?,?) =204
+ INFO 29 七月 14:23:36,695 -(              MoDBRW.java: 234) - execSQLUpdate: insert into egypt_user(edate,egkey,egvalue) values(?,?,?) =4851
+ INFO 29 七月 14:23:36,868 -(              MoDBRW.java: 234) - execSQLUpdate: insert into egypt_user(edate,egkey,egvalue) values(?,?,?) =173
+ INFO 29 七月 14:23:37,071 -(              MoDBRW.java: 234) - execSQLUpdate: insert into egypt_user(edate,egkey,egvalue) values(?,?,?) =203
+ INFO 29 七月 14:23:37,273 -(              MoDBRW.java: 234) - execSQLUpdate: insert into egypt_user(edate,egkey,egvalue) values(?,?,?) =202
+ INFO 29 七月 14:23:37,445 -(              MoDBRW.java: 234) - execSQLUpdate: insert into egypt_user(edate,egkey,egvalue) values(?,?,?) =172
+ INFO 29 七月 14:23:37,648 -(              MoDBRW.java: 234) - execSQLUpdate: insert into egypt_user(edate,egkey,egvalue) values(?,?,?) =203
+ INFO 29 七月 14:31:28,849 -(              MoDBRW.java: 234) - execSQLUpdate: insert into egypt_user(edate,egkey,egvalue) values(?,?,?) =1436
+ INFO 29 七月 14:31:29,037 -(              MoDBRW.java: 234) - execSQLUpdate: insert into egypt_user(edate,egkey,egvalue) values(?,?,?) =188
+ INFO 29 七月 14:31:29,224 -(              MoDBRW.java: 234) - execSQLUpdate: insert into egypt_user(edate,egkey,egvalue) values(?,?,?) =187
+ INFO 29 七月 14:31:29,411 -(              MoDBRW.java: 234) - execSQLUpdate: insert into egypt_user(edate,egkey,egvalue) values(?,?,?) =187
+ INFO 29 七月 14:31:29,583 -(              MoDBRW.java: 234) - execSQLUpdate: insert into egypt_user(edate,egkey,egvalue) values(?,?,?) =172
+ INFO 29 七月 14:31:29,770 -(              MoDBRW.java: 234) - execSQLUpdate: insert into egypt_user(edate,egkey,egvalue) values(?,?,?) =187
+ INFO 29 七月 14:40:08,803 -(              MoDBRW.java: 234) - execSQLUpdate: insert into egypt_user(edate,egkey,egvalue) values(?,?,?) =514
+ INFO 29 七月 14:40:09,007 -(              MoDBRW.java: 234) - execSQLUpdate: insert into egypt_user(edate,egkey,egvalue) values(?,?,?) =188
+ INFO 29 七月 14:40:09,194 -(              MoDBRW.java: 234) - execSQLUpdate: insert into egypt_user(edate,egkey,egvalue) values(?,?,?) =187
+ INFO 29 七月 14:40:09,382 -(              MoDBRW.java: 234) - execSQLUpdate: insert into egypt_user(edate,egkey,egvalue) values(?,?,?) =188
+ INFO 29 七月 14:40:09,584 -(              MoDBRW.java: 234) - execSQLUpdate: insert into egypt_user(edate,egkey,egvalue) values(?,?,?) =187
+ INFO 29 七月 14:40:09,756 -(              MoDBRW.java: 234) - execSQLUpdate: insert into egypt_user(edate,egkey,egvalue) values(?,?,?) =172
+ INFO 29 七月 14:42:38,082 -(              MoDBRW.java: 234) - execSQLUpdate: insert into egypt_user(edate,egkey,egvalue) values(?,?,?) =546
+ INFO 29 七月 14:42:38,270 -(              MoDBRW.java: 234) - execSQLUpdate: insert into egypt_user(edate,egkey,egvalue) values(?,?,?) =188
+ INFO 29 七月 14:42:38,473 -(              MoDBRW.java: 234) - execSQLUpdate: insert into egypt_user(edate,egkey,egvalue) values(?,?,?) =203
+ INFO 29 七月 14:42:38,645 -(              MoDBRW.java: 234) - execSQLUpdate: insert into egypt_user(edate,egkey,egvalue) values(?,?,?) =172
+ INFO 29 七月 14:42:38,801 -(              MoDBRW.java: 234) - execSQLUpdate: insert into egypt_user(edate,egkey,egvalue) values(?,?,?) =156
+ INFO 29 七月 14:42:38,972 -(              MoDBRW.java: 234) - execSQLUpdate: insert into egypt_user(edate,egkey,egvalue) values(?,?,?) =171
+ INFO 29 七月 14:43:38,082 -(              MoDBRW.java: 234) - execSQLUpdate: insert into egypt_user(edate,egkey,egvalue) values(?,?,?) =655
+ INFO 29 七月 14:43:38,348 -(              MoDBRW.java: 234) - execSQLUpdate: insert into egypt_user(edate,egkey,egvalue) values(?,?,?) =266
+ INFO 29 七月 14:43:38,613 -(              MoDBRW.java: 234) - execSQLUpdate: insert into egypt_user(edate,egkey,egvalue) values(?,?,?) =265
+ INFO 29 七月 14:43:38,878 -(              MoDBRW.java: 234) - execSQLUpdate: insert into egypt_user(edate,egkey,egvalue) values(?,?,?) =265
+ INFO 29 七月 14:43:39,128 -(              MoDBRW.java: 234) - execSQLUpdate: insert into egypt_user(edate,egkey,egvalue) values(?,?,?) =250
+ INFO 29 七月 14:43:39,410 -(              MoDBRW.java: 234) - execSQLUpdate: insert into egypt_user(edate,egkey,egvalue) values(?,?,?) =282
+ERROR 29 七月 14:56:22,521 -(              MoDBRW.java: 179) - execSQLQuery db(0) error
+com.microsoft.sqlserver.jdbc.SQLServerException: 到主机  的 TCP/IP 连接失败。 java.net.ConnectException: Connection timed out: connect
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDriverError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connectHelper(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.loginWithoutFailover(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connect(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerDriver.connect(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at org.apache.commons.dbcp.DriverManagerConnectionFactory.createConnection(DriverManagerConnectionFactory.java:46)
+	at org.apache.commons.dbcp.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:290)
+	at org.apache.commons.pool.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:771)
+	at org.apache.commons.dbcp.PoolingDriver.connect(PoolingDriver.java:175)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at util.MoDB.getConnection(MoDB.java:54)
+	at util.MoDBRW.doExecSQLQuery(MoDBRW.java:144)
+	at util.MoDBRW.execSQLQuery(MoDBRW.java:175)
+	at util.MoDBRW.execSQLQuery(MoDBRW.java:208)
+	at egypt.GetEgyptUserInfo.getInfo(GetEgyptUserInfo.java:107)
+	at egypt.GetEgyptUserInfo.insertToEgypt(GetEgyptUserInfo.java:18)
+	at egypt.GetEgyptUserInfo.main(GetEgyptUserInfo.java:182)
+ERROR 29 七月 14:56:22,521 -(    GetEgyptUserInfo.java: 114) - getInfo
+java.lang.NullPointerException
+	at egypt.GetEgyptUserInfo.getInfo(GetEgyptUserInfo.java:110)
+	at egypt.GetEgyptUserInfo.insertToEgypt(GetEgyptUserInfo.java:18)
+	at egypt.GetEgyptUserInfo.main(GetEgyptUserInfo.java:182)
+ERROR 29 七月 14:56:43,582 -(              MoDBRW.java: 179) - execSQLQuery db(0) error
+com.microsoft.sqlserver.jdbc.SQLServerException: 到主机  的 TCP/IP 连接失败。 java.net.ConnectException: Connection timed out: connect
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDriverError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connectHelper(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.loginWithoutFailover(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connect(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerDriver.connect(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at org.apache.commons.dbcp.DriverManagerConnectionFactory.createConnection(DriverManagerConnectionFactory.java:46)
+	at org.apache.commons.dbcp.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:290)
+	at org.apache.commons.pool.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:771)
+	at org.apache.commons.dbcp.PoolingDriver.connect(PoolingDriver.java:175)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at util.MoDB.getConnection(MoDB.java:54)
+	at util.MoDBRW.doExecSQLQuery(MoDBRW.java:144)
+	at util.MoDBRW.execSQLQuery(MoDBRW.java:175)
+	at util.MoDBRW.execSQLQuery(MoDBRW.java:208)
+	at egypt.GetEgyptUserInfo.getInfo(GetEgyptUserInfo.java:122)
+	at egypt.GetEgyptUserInfo.insertToEgypt(GetEgyptUserInfo.java:18)
+	at egypt.GetEgyptUserInfo.main(GetEgyptUserInfo.java:182)
+ERROR 29 七月 14:56:43,582 -(    GetEgyptUserInfo.java: 129) - getInfo
+java.lang.NullPointerException
+	at egypt.GetEgyptUserInfo.getInfo(GetEgyptUserInfo.java:125)
+	at egypt.GetEgyptUserInfo.insertToEgypt(GetEgyptUserInfo.java:18)
+	at egypt.GetEgyptUserInfo.main(GetEgyptUserInfo.java:182)
+ INFO 29 七月 14:56:53,130 -(              MoDBRW.java: 234) - execSQLUpdate: insert into egypt_user(edate,egkey,egvalue) values(?,?,?) =515
+ INFO 29 七月 14:56:53,318 -(              MoDBRW.java: 234) - execSQLUpdate: insert into egypt_user(edate,egkey,egvalue) values(?,?,?) =188
+ INFO 29 七月 14:56:53,521 -(              MoDBRW.java: 234) - execSQLUpdate: insert into egypt_user(edate,egkey,egvalue) values(?,?,?) =203
+ INFO 29 七月 14:56:53,708 -(              MoDBRW.java: 234) - execSQLUpdate: insert into egypt_user(edate,egkey,egvalue) values(?,?,?) =187
+ INFO 29 七月 14:56:53,895 -(              MoDBRW.java: 234) - execSQLUpdate: insert into egypt_user(edate,egkey,egvalue) values(?,?,?) =187
+ INFO 29 七月 14:56:54,067 -(              MoDBRW.java: 234) - execSQLUpdate: insert into egypt_user(edate,egkey,egvalue) values(?,?,?) =172
+ERROR 29 七月 14:57:04,614 -(              MoDBRW.java: 179) - execSQLQuery db(0) error
+com.microsoft.sqlserver.jdbc.SQLServerException: 到主机  的 TCP/IP 连接失败。 java.net.ConnectException: Connection timed out: connect
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDriverError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connectHelper(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.loginWithoutFailover(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connect(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerDriver.connect(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at org.apache.commons.dbcp.DriverManagerConnectionFactory.createConnection(DriverManagerConnectionFactory.java:46)
+	at org.apache.commons.dbcp.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:290)
+	at org.apache.commons.pool.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:771)
+	at org.apache.commons.dbcp.PoolingDriver.connect(PoolingDriver.java:175)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at util.MoDB.getConnection(MoDB.java:54)
+	at util.MoDBRW.doExecSQLQuery(MoDBRW.java:144)
+	at util.MoDBRW.execSQLQuery(MoDBRW.java:175)
+	at util.MoDBRW.execSQLQuery(MoDBRW.java:208)
+	at egypt.GetEgyptUserInfo.getInfo(GetEgyptUserInfo.java:137)
+	at egypt.GetEgyptUserInfo.insertToEgypt(GetEgyptUserInfo.java:18)
+	at egypt.GetEgyptUserInfo.main(GetEgyptUserInfo.java:182)
+ERROR 29 七月 14:57:04,614 -(    GetEgyptUserInfo.java: 144) - getInfo
+java.lang.NullPointerException
+	at egypt.GetEgyptUserInfo.getInfo(GetEgyptUserInfo.java:140)
+	at egypt.GetEgyptUserInfo.insertToEgypt(GetEgyptUserInfo.java:18)
+	at egypt.GetEgyptUserInfo.main(GetEgyptUserInfo.java:182)
+ INFO 29 七月 14:57:05,192 -(              MoDBRW.java: 234) - execSQLUpdate: insert into egypt_user(edate,egkey,egvalue) values(?,?,?) =578
+ INFO 29 七月 14:57:05,395 -(              MoDBRW.java: 234) - execSQLUpdate: insert into egypt_user(edate,egkey,egvalue) values(?,?,?) =203
+ INFO 29 七月 14:57:05,582 -(              MoDBRW.java: 234) - execSQLUpdate: insert into egypt_user(edate,egkey,egvalue) values(?,?,?) =187
+ INFO 29 七月 14:57:05,785 -(              MoDBRW.java: 234) - execSQLUpdate: insert into egypt_user(edate,egkey,egvalue) values(?,?,?) =203
+ INFO 29 七月 14:57:05,988 -(              MoDBRW.java: 234) - execSQLUpdate: insert into egypt_user(edate,egkey,egvalue) values(?,?,?) =203
+ INFO 29 七月 14:57:06,160 -(              MoDBRW.java: 234) - execSQLUpdate: insert into egypt_user(edate,egkey,egvalue) values(?,?,?) =172

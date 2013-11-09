@@ -1,0 +1,76 @@
+ INFO 26 九月 17:12:38,298 -(              MoDBRW.java: 132) - execSQL: select weaponid ,count(weaponid) num from ( select substring(msg,charindex('n:',msg)+2,2) weaponid from user_event where msg like ? and server_date between  ? and ? ) a group by weaponid  =1508
+ INFO 26 九月 17:12:38,771 -(              MoDBRW.java: 132) - execSQL: select weaponid ,count(weaponid) num from ( select substring(msg,charindex('n:',msg)+2,2) weaponid from user_event where msg like ? and server_date between  ? and ? ) a group by weaponid  =468
+ INFO 26 九月 17:12:39,264 -(              MoDBRW.java: 132) - execSQL: select itemid,itemAmount from shopitem where itemtype='weapon' =492
+ INFO 26 九月 17:12:39,973 -(              MoDBRW.java: 132) - execSQL: select substring(weaponid,1,charindex(':',weaponid)-1) weaponid ,itemid from ( select  substring(msg,charindex(':',msg)+1,3) weaponid,  		  substring(msg,charindex('.',msg)+3,charindex('/,',msg)-charindex('.',msg)-3) itemid from user_event where msg like 'action=buyWeaponByC%' and server_date between ? and ? ) a  =708
+ INFO 26 九月 17:12:40,732 -(              MoDBRW.java: 132) - execSQL: select weaponid ,count(weaponid) num from ( select substring(msg,charindex(':',msg)+1,2) weaponid from user_event where msg like 'action=buyWeaponByG%' and server_date between ? and ? ) a group by weaponid  =754
+ INFO 26 九月 17:12:41,236 -(              MoDBRW.java: 132) - execSQL: select weaponid ,count(weaponid) num from ( select  SUBSTRING(msg, CHARINDEX(':', msg)+1, CHARINDEX('_/', msg)-CHARINDEX(':', msg)-4) weaponid  from user_event WHERE msg LIKE 'action=getMissionReward%' and msg like '%RewardItem=/3%' and server_date between ? and ? ) a group by weaponid  =503
+ INFO 26 九月 17:49:05,980 -(              MoDBRW.java: 132) - execSQL: select weaponid ,count(weaponid) num from ( select substring(msg,charindex('n:',msg)+2,2) weaponid from user_event where msg like ? and server_date between  ? and ? ) a group by weaponid  =2027
+ INFO 26 九月 17:49:06,496 -(              MoDBRW.java: 132) - execSQL: select weaponid ,count(weaponid) num from ( select substring(msg,charindex('n:',msg)+2,2) weaponid from user_event where msg like ? and server_date between  ? and ? ) a group by weaponid  =514
+ INFO 26 九月 17:49:16,961 -(              MoDBRW.java: 132) - execSQL: select itemid,itemAmount from shopitem where itemtype='weapon' =10465
+ INFO 26 九月 17:49:21,149 -(              MoDBRW.java: 132) - execSQL: select substring(weaponid,1,charindex(':',weaponid)-1) weaponid ,itemid from ( select  substring(msg,charindex(':',msg)+1,3) weaponid,  		  substring(msg,charindex('.',msg)+3,charindex('/,',msg)-charindex('.',msg)-3) itemid from user_event where msg like 'action=buyWeaponByC%' and server_date between ? and ? ) a  =4188
+ INFO 26 九月 17:49:23,411 -(              MoDBRW.java: 132) - execSQL: select weaponid ,count(weaponid) num from ( select substring(msg,charindex(':',msg)+1,2) weaponid from user_event where msg like 'action=buyWeaponByG%' and server_date between ? and ? ) a group by weaponid  =2258
+ INFO 26 九月 17:50:55,934 -(              MoDBRW.java: 132) - execSQL: select weaponid ,count(weaponid) num from ( select  SUBSTRING(msg, CHARINDEX(':', msg)+1, CHARINDEX('_/', msg)-CHARINDEX(':', msg)-4) weaponid  from user_event WHERE msg LIKE 'action=getMissionReward%' and msg like '%RewardItem=/3%' and server_date between ? and ? ) a group by weaponid  =92523
+ERROR 26 九月 17:50:56,946 -(              MoDBRW.java: 125) - execSQL error
+com.microsoft.sqlserver.jdbc.SQLServerException: 到主机  的 TCP/IP 连接失败。 java.net.ConnectException: Connection refused: connect
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDriverError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connectHelper(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.loginWithoutFailover(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connect(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerDriver.connect(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at org.apache.commons.dbcp.DriverManagerConnectionFactory.createConnection(DriverManagerConnectionFactory.java:46)
+	at org.apache.commons.dbcp.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:290)
+	at org.apache.commons.pool.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:771)
+	at org.apache.commons.dbcp.PoolingDriver.connect(PoolingDriver.java:175)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at util.MoDB.getConnection(MoDB.java:54)
+	at util.MoDBRW.execSQL(MoDBRW.java:114)
+	at weapon.UseWeapon.getInWeaponByLuckyFree(UseWeapon.java:96)
+	at weapon.UseWeapon.main(UseWeapon.java:138)
+ INFO 26 九月 17:50:56,947 -(              MoDBRW.java: 132) - execSQL: select weaponid ,count(weaponid) num from ( SELECT  SUBSTRING(msg, CHARINDEX(':', msg)+1, len(msg)-CHARINDEX(':', msg)-3) weaponid  from user_event WHERE msg like 'action=luckyDrawF%' and msg like '%weapon%' and server_date between ? and ? ) a group by weaponid  =1013
+ INFO 26 九月 17:51:50,145 -(              MoDBRW.java: 132) - execSQL: select weaponid ,count(weaponid) num from ( select substring(msg,charindex('n:',msg)+2,2) weaponid from user_event where msg like ? and server_date between  ? and ? ) a group by weaponid  =11339
+ INFO 26 九月 17:51:51,829 -(              MoDBRW.java: 132) - execSQL: select weaponid ,count(weaponid) num from ( select substring(msg,charindex('n:',msg)+2,2) weaponid from user_event where msg like ? and server_date between  ? and ? ) a group by weaponid  =1681
+ INFO 26 九月 17:51:54,226 -(              MoDBRW.java: 132) - execSQL: select itemid,itemAmount from shopitem where itemtype='weapon' =2396
+ERROR 26 九月 17:52:34,021 -(              MoDBRW.java: 125) - execSQL error
+com.microsoft.sqlserver.jdbc.SQLServerException: The request failed to run because the batch is aborted, this can be caused by abort signal sent from client, or another request is running in the same session, which makes the session busy.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.IOBuffer.processPackets(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.CancelableRequest.complete(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PreparedStatementExecutionRequest.executeStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.CancelableRequest.execute(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeRequest(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeQuery(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeQuery(DelegatingPreparedStatement.java:92)
+	at util.MoDBRW.execSQL(MoDBRW.java:122)
+	at weapon.UseWeapon.getInWeaponByCredit(UseWeapon.java:170)
+	at weapon.UseWeapon.main(UseWeapon.java:135)
+ INFO 26 九月 17:52:34,036 -(              MoDBRW.java: 132) - execSQL: select substring(weaponid,1,charindex(':',weaponid)-1) weaponid ,itemid from ( select  substring(msg,charindex(':',msg)+1,3) weaponid,  		  substring(msg,charindex('.',msg)+3,charindex('/,',msg)-charindex('.',msg)-3) itemid from user_event where msg like 'action=buyWeaponByC%' and server_date between ? and ? ) a  =39810
+ INFO 26 九月 17:54:50,050 -(              MoDBRW.java: 132) - execSQL: select weaponid ,count(weaponid) num from ( select substring(msg,charindex('n:',msg)+2,2) weaponid from user_event where msg like ? and server_date between  ? and ? ) a group by weaponid  =6102
+ INFO 26 九月 17:54:50,455 -(              MoDBRW.java: 132) - execSQL: select weaponid ,count(weaponid) num from ( select substring(msg,charindex('n:',msg)+2,2) weaponid from user_event where msg like ? and server_date between  ? and ? ) a group by weaponid  =402
+ INFO 26 九月 17:54:58,315 -(              MoDBRW.java: 132) - execSQL: select itemid,itemAmount from shopitem where itemtype='weapon' =7859
+ERROR 26 九月 17:55:54,657 -(              MoDBRW.java: 125) - execSQL error
+com.microsoft.sqlserver.jdbc.SQLServerException: The request failed to run because the batch is aborted, this can be caused by abort signal sent from client, or another request is running in the same session, which makes the session busy.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.IOBuffer.processPackets(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.CancelableRequest.complete(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PreparedStatementExecutionRequest.executeStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.CancelableRequest.execute(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeRequest(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeQuery(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeQuery(DelegatingPreparedStatement.java:92)
+	at util.MoDBRW.execSQL(MoDBRW.java:122)
+	at weapon.UseWeapon.getInWeaponByCredit(UseWeapon.java:170)
+	at weapon.UseWeapon.main(UseWeapon.java:135)
+ INFO 26 九月 17:55:54,670 -(              MoDBRW.java: 132) - execSQL: select substring(weaponid,1,charindex(':',weaponid)-1) weaponid ,itemid from ( select  substring(msg,charindex(':',msg)+1,3) weaponid,  		  substring(msg,charindex('.',msg)+3,charindex('/,',msg)-charindex('.',msg)-3) itemid from user_event where msg like 'action=buyWeaponByC%' and server_date between ? and ? ) a  =56355
+ INFO 26 九月 17:57:37,758 -(              MoDBRW.java: 132) - execSQL: select weaponid ,count(weaponid) num from ( select substring(msg,charindex('n:',msg)+2,2) weaponid from user_event where msg like ? and server_date between  ? and ? ) a group by weaponid  =1902
+ INFO 26 九月 17:57:38,744 -(              MoDBRW.java: 132) - execSQL: select weaponid ,count(weaponid) num from ( select substring(msg,charindex('n:',msg)+2,2) weaponid from user_event where msg like ? and server_date between  ? and ? ) a group by weaponid  =984
+ INFO 26 九月 17:57:42,549 -(              MoDBRW.java: 132) - execSQL: select itemid,itemAmount from shopitem where itemtype='weapon' =3804
+ INFO 26 九月 17:57:43,301 -(              MoDBRW.java: 132) - execSQL: select substring(weaponid,1,charindex(':',weaponid)-1) weaponid ,itemid from ( select  substring(msg,charindex(':',msg)+1,3) weaponid,  		  substring(msg,charindex('.',msg)+3,charindex('/,',msg)-charindex('.',msg)-3) itemid from user_event where msg like 'action=buyWeaponByC%' and server_date between ? and ? ) a  =752
+ INFO 26 九月 17:57:44,661 -(              MoDBRW.java: 132) - execSQL: select weaponid ,count(weaponid) num from ( select substring(msg,charindex(':',msg)+1,2) weaponid from user_event where msg like 'action=buyWeaponByG%' and server_date between ? and ? ) a group by weaponid  =1355
+ INFO 26 九月 17:57:45,859 -(              MoDBRW.java: 132) - execSQL: select weaponid ,count(weaponid) num from ( select  SUBSTRING(msg, CHARINDEX(':', msg)+1, CHARINDEX('_/', msg)-CHARINDEX(':', msg)-4) weaponid  from user_event WHERE msg LIKE 'action=getMissionReward%' and msg like '%RewardItem=/3%' and server_date between ? and ? ) a group by weaponid  =1198
+ INFO 26 九月 17:57:46,350 -(              MoDBRW.java: 132) - execSQL: select weaponid ,count(weaponid) num from ( SELECT  SUBSTRING(msg, CHARINDEX(':', msg)+1, len(msg)-CHARINDEX(':', msg)-3) weaponid  from user_event WHERE msg like 'action=luckyDrawF%' and msg like '%weapon%' and server_date between ? and ? ) a group by weaponid  =491
+ INFO 26 九月 17:57:46,874 -(              MoDBRW.java: 132) - execSQL: select weaponid ,count(weaponid) num from ( SELECT  SUBSTRING(msg, CHARINDEX(':', msg)+1, len(msg)-CHARINDEX(':', msg)-13) weaponid  from user_event WHERE msg like 'action=luckyDrawB%' and msg like '%weapon%' and server_date between ? and ? ) a group by weaponid  =524

@@ -1,0 +1,1190 @@
+ INFO 24 九月 10:52:31,692 -(              MoDBRW.java: 132) - execSQL: select weaponid ,count(weaponid) num from ( select substring(msg,charindex('n:',msg)+2,2) weaponid from user_event where msg like ? and server_date between  ? and ? ) a group by weaponid  =1455
+ INFO 24 九月 10:52:32,197 -(              MoDBRW.java: 132) - execSQL: select weaponid ,count(weaponid) num from ( select substring(msg,charindex('n:',msg)+2,2) weaponid from user_event where msg like ? and server_date between  ? and ? ) a group by weaponid  =501
+ INFO 24 九月 10:52:32,684 -(              MoDBRW.java: 132) - execSQL: select itemid ,count(itemid) num from ( select  cast(substring(msg,charindex('.',msg)+3,charindex('/,',msg)-charindex('.',msg)-3)as int ) itemid from user_event 	where msg like 'action=buyWeaponByC%' 	and server_date between ? and ? ) a group by itemid  =486
+ INFO 24 九月 10:53:10,044 -(              MoDBRW.java: 132) - execSQL: select weaponid ,count(weaponid) num from ( select substring(msg,charindex('n:',msg)+2,2) weaponid from user_event where msg like ? and server_date between  ? and ? ) a group by weaponid  =1283
+ INFO 24 九月 10:53:10,534 -(              MoDBRW.java: 132) - execSQL: select weaponid ,count(weaponid) num from ( select substring(msg,charindex('n:',msg)+2,2) weaponid from user_event where msg like ? and server_date between  ? and ? ) a group by weaponid  =488
+ INFO 24 九月 10:53:11,024 -(              MoDBRW.java: 132) - execSQL: select itemid ,count(itemid) num from ( select  substring(msg,charindex('.',msg)+3,charindex('/,',msg)-charindex('.',msg)-3) itemid from user_event 	where msg like 'action=buyWeaponByC%' 	and server_date between ? and ? ) a group by itemid  =489
+ INFO 24 九月 12:00:52,884 -(              MoDBRW.java: 132) - execSQL: select weaponid ,count(weaponid) num from ( select substring(msg,charindex('n:',msg)+2,2) weaponid from user_event where msg like ? and server_date between  ? and ? ) a group by weaponid  =1299
+ INFO 24 九月 12:00:53,307 -(              MoDBRW.java: 132) - execSQL: select weaponid ,count(weaponid) num from ( select substring(msg,charindex('n:',msg)+2,2) weaponid from user_event where msg like ? and server_date between  ? and ? ) a group by weaponid  =420
+ INFO 24 九月 12:00:53,864 -(              MoDBRW.java: 132) - execSQL: select itemid,itemAmount from shopitem where itemtype='weapon' =557
+ INFO 24 九月 12:00:54,408 -(              MoDBRW.java: 132) - execSQL: select substring(weaponid,1,charindex(':',weaponid)-1) weaponid ,itemid from ( select  substring(msg,charindex(':',msg)+1,3) weaponid,  		  substring(msg,charindex('.',msg)+3,charindex('/,',msg)-charindex('.',msg)-3) itemid from user_event where msg like 'action=buyWeaponByC%' and server_date between ? and ? ) a  =543
+ INFO 24 九月 14:16:35,115 -(              MoDBRW.java: 132) - execSQL: select weaponid ,count(weaponid) num from ( select substring(msg,charindex('n:',msg)+2,2) weaponid from user_event where msg like ? and server_date between  ? and ? ) a group by weaponid  =1400
+ INFO 24 九月 14:16:35,707 -(              MoDBRW.java: 132) - execSQL: select weaponid ,count(weaponid) num from ( select substring(msg,charindex('n:',msg)+2,2) weaponid from user_event where msg like ? and server_date between  ? and ? ) a group by weaponid  =589
+ INFO 24 九月 14:16:36,232 -(              MoDBRW.java: 132) - execSQL: select itemid,itemAmount from shopitem where itemtype='weapon' =524
+ INFO 24 九月 14:16:36,781 -(              MoDBRW.java: 132) - execSQL: select substring(weaponid,1,charindex(':',weaponid)-1) weaponid ,itemid from ( select  substring(msg,charindex(':',msg)+1,3) weaponid,  		  substring(msg,charindex('.',msg)+3,charindex('/,',msg)-charindex('.',msg)-3) itemid from user_event where msg like 'action=buyWeaponByC%' and server_date between ? and ? ) a  =549
+ERROR 24 九月 14:16:36,805 -(              MoDBRW.java: 125) - execSQL error
+com.microsoft.sqlserver.jdbc.SQLServerException: 索引 1 超出范围。
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDriverError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.setterGetParam(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.setTimestampParam(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.setTimestamp(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.setTimestamp(DelegatingPreparedStatement.java:143)
+	at util.MoDBRW.setArgs(MoDBRW.java:267)
+	at util.MoDBRW.execSQL(MoDBRW.java:118)
+	at weapon.UseWeapon.getInWeaponByGold(UseWeapon.java:48)
+	at weapon.UseWeapon.main(UseWeapon.java:64)
+ INFO 24 九月 14:16:36,807 -(              MoDBRW.java: 132) - execSQL: select weaponid ,count(weaponid) num from ( select substring(msg,charindex(':',msg)+1,2) weaponid from user_event where msg like 'action=buyWeaponByG% and server_date between  ? and ? ) a group by weaponid  =22
+ INFO 24 九月 14:20:43,079 -(              MoDBRW.java: 132) - execSQL: select weaponid ,count(weaponid) num from ( select substring(msg,charindex('n:',msg)+2,2) weaponid from user_event where msg like ? and server_date between  ? and ? ) a group by weaponid  =1347
+ INFO 24 九月 14:20:43,667 -(              MoDBRW.java: 132) - execSQL: select weaponid ,count(weaponid) num from ( select substring(msg,charindex('n:',msg)+2,2) weaponid from user_event where msg like ? and server_date between  ? and ? ) a group by weaponid  =585
+ INFO 24 九月 14:20:44,227 -(              MoDBRW.java: 132) - execSQL: select itemid,itemAmount from shopitem where itemtype='weapon' =560
+ INFO 24 九月 14:20:44,763 -(              MoDBRW.java: 132) - execSQL: select substring(weaponid,1,charindex(':',weaponid)-1) weaponid ,itemid from ( select  substring(msg,charindex(':',msg)+1,3) weaponid,  		  substring(msg,charindex('.',msg)+3,charindex('/,',msg)-charindex('.',msg)-3) itemid from user_event where msg like 'action=buyWeaponByC%' and server_date between ? and ? ) a  =535
+ERROR 24 九月 14:20:44,773 -(              MoDBRW.java: 125) - execSQL error
+com.microsoft.sqlserver.jdbc.SQLServerException: 索引 1 超出范围。
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDriverError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.setterGetParam(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.setTimestampParam(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.setTimestamp(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.setTimestamp(DelegatingPreparedStatement.java:143)
+	at util.MoDBRW.setArgs(MoDBRW.java:267)
+	at util.MoDBRW.execSQL(MoDBRW.java:118)
+	at weapon.UseWeapon.getInWeaponByGold(UseWeapon.java:48)
+	at weapon.UseWeapon.main(UseWeapon.java:64)
+ INFO 24 九月 14:20:44,774 -(              MoDBRW.java: 132) - execSQL: select weaponid ,count(weaponid) num from ( select substring(msg,charindex(':',msg)+1,2) weaponid from user_event where msg like 'action=buyWeaponByG% and server_date between  ? and ? ) a group by weaponid  =8
+ INFO 24 九月 14:22:15,142 -(              MoDBRW.java: 132) - execSQL: select weaponid ,count(weaponid) num from ( select substring(msg,charindex('n:',msg)+2,2) weaponid from user_event where msg like ? and server_date between  ? and ? ) a group by weaponid  =1282
+ INFO 24 九月 14:22:15,532 -(              MoDBRW.java: 132) - execSQL: select weaponid ,count(weaponid) num from ( select substring(msg,charindex('n:',msg)+2,2) weaponid from user_event where msg like ? and server_date between  ? and ? ) a group by weaponid  =387
+ INFO 24 九月 14:22:16,044 -(              MoDBRW.java: 132) - execSQL: select itemid,itemAmount from shopitem where itemtype='weapon' =511
+ INFO 24 九月 14:22:16,583 -(              MoDBRW.java: 132) - execSQL: select substring(weaponid,1,charindex(':',weaponid)-1) weaponid ,itemid from ( select  substring(msg,charindex(':',msg)+1,3) weaponid,  		  substring(msg,charindex('.',msg)+3,charindex('/,',msg)-charindex('.',msg)-3) itemid from user_event where msg like 'action=buyWeaponByC%' and server_date between ? and ? ) a  =538
+ERROR 24 九月 14:22:16,594 -(              MoDBRW.java: 125) - execSQL error
+com.microsoft.sqlserver.jdbc.SQLServerException: 索引 1 超出范围。
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDriverError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.setterGetParam(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.setTimestampParam(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.setTimestamp(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.setTimestamp(DelegatingPreparedStatement.java:143)
+	at util.MoDBRW.setArgs(MoDBRW.java:267)
+	at util.MoDBRW.execSQL(MoDBRW.java:118)
+	at weapon.UseWeapon.getInWeaponByGold(UseWeapon.java:48)
+	at weapon.UseWeapon.main(UseWeapon.java:64)
+ INFO 24 九月 14:22:16,595 -(              MoDBRW.java: 132) - execSQL: select weaponid ,count(weaponid) num from ( select substring(msg,charindex(':',msg)+1,2) weaponid from user_event where msg like 'action=buyWeaponByG% and server_date between  ? and ? ) a group by weaponid  =8
+ INFO 24 九月 14:24:57,820 -(              MoDBRW.java: 132) - execSQL: select weaponid ,count(weaponid) num from ( select substring(msg,charindex('n:',msg)+2,2) weaponid from user_event where msg like ? and server_date between  ? and ? ) a group by weaponid  =1663
+ INFO 24 九月 14:24:58,484 -(              MoDBRW.java: 132) - execSQL: select weaponid ,count(weaponid) num from ( select substring(msg,charindex('n:',msg)+2,2) weaponid from user_event where msg like ? and server_date between  ? and ? ) a group by weaponid  =661
+ INFO 24 九月 14:24:59,610 -(              MoDBRW.java: 132) - execSQL: select itemid,itemAmount from shopitem where itemtype='weapon' =1125
+ INFO 24 九月 14:25:00,351 -(              MoDBRW.java: 132) - execSQL: select substring(weaponid,1,charindex(':',weaponid)-1) weaponid ,itemid from ( select  substring(msg,charindex(':',msg)+1,3) weaponid,  		  substring(msg,charindex('.',msg)+3,charindex('/,',msg)-charindex('.',msg)-3) itemid from user_event where msg like 'action=buyWeaponByC%' and server_date between ? and ? ) a  =740
+ERROR 24 九月 14:25:00,526 -(              MoDBRW.java: 125) - execSQL error
+com.microsoft.sqlserver.jdbc.SQLServerException: Incorrect syntax near '2013'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.IOBuffer.processPackets(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.getPrepExecResponse(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PreparedStatementExecutionRequest.executeStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.CancelableRequest.execute(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeRequest(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeQuery(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeQuery(DelegatingPreparedStatement.java:92)
+	at util.MoDBRW.execSQL(MoDBRW.java:122)
+	at weapon.UseWeapon.getInWeaponByGold(UseWeapon.java:48)
+	at weapon.UseWeapon.main(UseWeapon.java:64)
+ INFO 24 九月 14:25:00,528 -(              MoDBRW.java: 132) - execSQL: select weaponid ,count(weaponid) num from ( select substring(msg,charindex(':',msg)+1,2) weaponid from user_event where msg like 'action=buyWeaponByG% and server_date between '2013-09-01'	and '2013-09-02' ) a group by weaponid  =174
+ INFO 24 九月 14:26:21,365 -(              MoDBRW.java: 132) - execSQL: select weaponid ,count(weaponid) num from ( select substring(msg,charindex('n:',msg)+2,2) weaponid from user_event where msg like ? and server_date between  ? and ? ) a group by weaponid  =1265
+ INFO 24 九月 14:26:21,869 -(              MoDBRW.java: 132) - execSQL: select weaponid ,count(weaponid) num from ( select substring(msg,charindex('n:',msg)+2,2) weaponid from user_event where msg like ? and server_date between  ? and ? ) a group by weaponid  =502
+ INFO 24 九月 14:26:22,384 -(              MoDBRW.java: 132) - execSQL: select itemid,itemAmount from shopitem where itemtype='weapon' =515
+ INFO 24 九月 14:26:22,940 -(              MoDBRW.java: 132) - execSQL: select substring(weaponid,1,charindex(':',weaponid)-1) weaponid ,itemid from ( select  substring(msg,charindex(':',msg)+1,3) weaponid,  		  substring(msg,charindex('.',msg)+3,charindex('/,',msg)-charindex('.',msg)-3) itemid from user_event where msg like 'action=buyWeaponByC%' and server_date between ? and ? ) a  =555
+ERROR 24 九月 14:26:23,034 -(              MoDBRW.java: 125) - execSQL error
+com.microsoft.sqlserver.jdbc.SQLServerException: Incorrect syntax near '2013'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.IOBuffer.processPackets(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.getPrepExecResponse(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PreparedStatementExecutionRequest.executeStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.CancelableRequest.execute(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeRequest(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeQuery(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeQuery(DelegatingPreparedStatement.java:92)
+	at util.MoDBRW.execSQL(MoDBRW.java:122)
+	at weapon.UseWeapon.getInWeaponByGold(UseWeapon.java:48)
+	at weapon.UseWeapon.main(UseWeapon.java:64)
+ INFO 24 九月 14:26:23,035 -(              MoDBRW.java: 132) - execSQL: select weaponid ,count(weaponid) num from ( select substring(msg,charindex(':',msg)+1,2) weaponid from user_event where msg like 'action=buyWeaponByG% and server_date between '2013-09-01'	and '2013-09-02' ) a group by weaponid  =91
+ INFO 24 九月 14:27:54,652 -(              MoDBRW.java: 132) - execSQL: select weaponid ,count(weaponid) num from ( select substring(msg,charindex('n:',msg)+2,2) weaponid from user_event where msg like ? and server_date between  ? and ? ) a group by weaponid  =1380
+ INFO 24 九月 14:27:55,060 -(              MoDBRW.java: 132) - execSQL: select weaponid ,count(weaponid) num from ( select substring(msg,charindex('n:',msg)+2,2) weaponid from user_event where msg like ? and server_date between  ? and ? ) a group by weaponid  =405
+ INFO 24 九月 14:27:55,601 -(              MoDBRW.java: 132) - execSQL: select itemid,itemAmount from shopitem where itemtype='weapon' =540
+ INFO 24 九月 14:27:56,152 -(              MoDBRW.java: 132) - execSQL: select substring(weaponid,1,charindex(':',weaponid)-1) weaponid ,itemid from ( select  substring(msg,charindex(':',msg)+1,3) weaponid,  		  substring(msg,charindex('.',msg)+3,charindex('/,',msg)-charindex('.',msg)-3) itemid from user_event where msg like 'action=buyWeaponByC%' and server_date between ? and ? ) a  =550
+ INFO 24 九月 14:27:56,419 -(              MoDBRW.java: 132) - execSQL: select weaponid ,count(weaponid) num from ( select substring(msg,charindex(':',msg)+1,2) weaponid from user_event where msg like 'action=buyWeaponByG%' and server_date between '2013-09-01' and '2013-09-02' ) a group by weaponid  =264
+ INFO 24 九月 14:28:36,653 -(              MoDBRW.java: 132) - execSQL: select weaponid ,count(weaponid) num from ( select substring(msg,charindex('n:',msg)+2,2) weaponid from user_event where msg like ? and server_date between  ? and ? ) a group by weaponid  =1256
+ INFO 24 九月 14:28:37,040 -(              MoDBRW.java: 132) - execSQL: select weaponid ,count(weaponid) num from ( select substring(msg,charindex('n:',msg)+2,2) weaponid from user_event where msg like ? and server_date between  ? and ? ) a group by weaponid  =384
+ INFO 24 九月 14:28:37,602 -(              MoDBRW.java: 132) - execSQL: select itemid,itemAmount from shopitem where itemtype='weapon' =562
+ INFO 24 九月 14:28:38,115 -(              MoDBRW.java: 132) - execSQL: select substring(weaponid,1,charindex(':',weaponid)-1) weaponid ,itemid from ( select  substring(msg,charindex(':',msg)+1,3) weaponid,  		  substring(msg,charindex('.',msg)+3,charindex('/,',msg)-charindex('.',msg)-3) itemid from user_event where msg like 'action=buyWeaponByC%' and server_date between ? and ? ) a  =512
+ERROR 24 九月 14:28:38,125 -(              MoDBRW.java: 125) - execSQL error
+com.microsoft.sqlserver.jdbc.SQLServerException: 索引 1 超出范围。
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDriverError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.setterGetParam(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.setTimestampParam(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.setTimestamp(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.setTimestamp(DelegatingPreparedStatement.java:143)
+	at util.MoDBRW.setArgs(MoDBRW.java:267)
+	at util.MoDBRW.execSQL(MoDBRW.java:118)
+	at weapon.UseWeapon.getInWeaponByGold(UseWeapon.java:48)
+	at weapon.UseWeapon.main(UseWeapon.java:64)
+ INFO 24 九月 14:28:38,126 -(              MoDBRW.java: 132) - execSQL: select weaponid ,count(weaponid) num from ( select substring(msg,charindex(':',msg)+1,2) weaponid from user_event where msg like 'action=buyWeaponByG% and server_date between ? and ? ) a group by weaponid  =8
+ INFO 24 九月 14:28:55,060 -(              MoDBRW.java: 132) - execSQL: select weaponid ,count(weaponid) num from ( select substring(msg,charindex('n:',msg)+2,2) weaponid from user_event where msg like ? and server_date between  ? and ? ) a group by weaponid  =1385
+ INFO 24 九月 14:28:55,571 -(              MoDBRW.java: 132) - execSQL: select weaponid ,count(weaponid) num from ( select substring(msg,charindex('n:',msg)+2,2) weaponid from user_event where msg like ? and server_date between  ? and ? ) a group by weaponid  =509
+ INFO 24 九月 14:28:56,172 -(              MoDBRW.java: 132) - execSQL: select itemid,itemAmount from shopitem where itemtype='weapon' =600
+ INFO 24 九月 14:28:56,763 -(              MoDBRW.java: 132) - execSQL: select substring(weaponid,1,charindex(':',weaponid)-1) weaponid ,itemid from ( select  substring(msg,charindex(':',msg)+1,3) weaponid,  		  substring(msg,charindex('.',msg)+3,charindex('/,',msg)-charindex('.',msg)-3) itemid from user_event where msg like 'action=buyWeaponByC%' and server_date between ? and ? ) a  =590
+ INFO 24 九月 14:28:57,604 -(              MoDBRW.java: 132) - execSQL: select weaponid ,count(weaponid) num from ( select substring(msg,charindex(':',msg)+1,2) weaponid from user_event where msg like 'action=buyWeaponByG%' and server_date between ? and ? ) a group by weaponid  =837
+ INFO 24 九月 14:59:47,635 -(              MoDBRW.java: 132) - execSQL: select weaponid ,count(weaponid) num from ( select substring(msg,charindex('n:',msg)+2,2) weaponid from user_event where msg like ? and server_date between  ? and ? ) a group by weaponid  =1343
+ INFO 24 九月 14:59:48,063 -(              MoDBRW.java: 132) - execSQL: select weaponid ,count(weaponid) num from ( select substring(msg,charindex('n:',msg)+2,2) weaponid from user_event where msg like ? and server_date between  ? and ? ) a group by weaponid  =425
+ INFO 24 九月 14:59:48,656 -(              MoDBRW.java: 132) - execSQL: select itemid,itemAmount from shopitem where itemtype='weapon' =593
+ INFO 24 九月 14:59:49,309 -(              MoDBRW.java: 132) - execSQL: select substring(weaponid,1,charindex(':',weaponid)-1) weaponid ,itemid from ( select  substring(msg,charindex(':',msg)+1,3) weaponid,  		  substring(msg,charindex('.',msg)+3,charindex('/,',msg)-charindex('.',msg)-3) itemid from user_event where msg like 'action=buyWeaponByC%' and server_date between ? and ? ) a  =652
+ INFO 24 九月 14:59:50,057 -(              MoDBRW.java: 132) - execSQL: select weaponid ,count(weaponid) num from ( select substring(msg,charindex(':',msg)+1,2) weaponid from user_event where msg like 'action=buyWeaponByG%' and server_date between ? and ? ) a group by weaponid  =745
+ERROR 24 九月 14:59:50,525 -(              MoDBRW.java: 229) - execSQLUpdate error
+com.microsoft.sqlserver.jdbc.SQLServerException: Incorrect syntax near the keyword 'from'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.IOBuffer.processPackets(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.getPrepExecResponse(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PreparedStatementExecutionRequest.executeStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.CancelableRequest.execute(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeRequest(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeUpdate(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:101)
+	at util.MoDBRW.execSQLUpdate(MoDBRW.java:227)
+	at weapon.UseWeapon.insertDB(UseWeapon.java:131)
+	at weapon.UseWeapon.main(UseWeapon.java:65)
+ INFO 24 九月 14:59:50,527 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus(type,from,wdate,weaponid,amount) VALUES(?,?,?,?,?) =469
+ERROR 24 九月 14:59:50,633 -(              MoDBRW.java: 229) - execSQLUpdate error
+com.microsoft.sqlserver.jdbc.SQLServerException: Incorrect syntax near the keyword 'from'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.IOBuffer.processPackets(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.getPrepExecResponse(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PreparedStatementExecutionRequest.executeStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.CancelableRequest.execute(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeRequest(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeUpdate(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:101)
+	at util.MoDBRW.execSQLUpdate(MoDBRW.java:227)
+	at weapon.UseWeapon.insertDB(UseWeapon.java:131)
+	at weapon.UseWeapon.main(UseWeapon.java:65)
+ INFO 24 九月 14:59:50,634 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus(type,from,wdate,weaponid,amount) VALUES(?,?,?,?,?) =107
+ERROR 24 九月 14:59:50,749 -(              MoDBRW.java: 229) - execSQLUpdate error
+com.microsoft.sqlserver.jdbc.SQLServerException: Incorrect syntax near the keyword 'from'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.IOBuffer.processPackets(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.getPrepExecResponse(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PreparedStatementExecutionRequest.executeStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.CancelableRequest.execute(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeRequest(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeUpdate(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:101)
+	at util.MoDBRW.execSQLUpdate(MoDBRW.java:227)
+	at weapon.UseWeapon.insertDB(UseWeapon.java:131)
+	at weapon.UseWeapon.main(UseWeapon.java:65)
+ INFO 24 九月 14:59:50,750 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus(type,from,wdate,weaponid,amount) VALUES(?,?,?,?,?) =115
+ERROR 24 九月 14:59:50,848 -(              MoDBRW.java: 229) - execSQLUpdate error
+com.microsoft.sqlserver.jdbc.SQLServerException: Incorrect syntax near the keyword 'from'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.IOBuffer.processPackets(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.getPrepExecResponse(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PreparedStatementExecutionRequest.executeStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.CancelableRequest.execute(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeRequest(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeUpdate(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:101)
+	at util.MoDBRW.execSQLUpdate(MoDBRW.java:227)
+	at weapon.UseWeapon.insertDB(UseWeapon.java:131)
+	at weapon.UseWeapon.main(UseWeapon.java:65)
+ INFO 24 九月 14:59:50,849 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus(type,from,wdate,weaponid,amount) VALUES(?,?,?,?,?) =98
+ERROR 24 九月 14:59:50,961 -(              MoDBRW.java: 229) - execSQLUpdate error
+com.microsoft.sqlserver.jdbc.SQLServerException: Incorrect syntax near the keyword 'from'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.IOBuffer.processPackets(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.getPrepExecResponse(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PreparedStatementExecutionRequest.executeStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.CancelableRequest.execute(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeRequest(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeUpdate(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:101)
+	at util.MoDBRW.execSQLUpdate(MoDBRW.java:227)
+	at weapon.UseWeapon.insertDB(UseWeapon.java:131)
+	at weapon.UseWeapon.main(UseWeapon.java:65)
+ INFO 24 九月 14:59:50,962 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus(type,from,wdate,weaponid,amount) VALUES(?,?,?,?,?) =113
+ERROR 24 九月 14:59:51,059 -(              MoDBRW.java: 229) - execSQLUpdate error
+com.microsoft.sqlserver.jdbc.SQLServerException: Incorrect syntax near the keyword 'from'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.IOBuffer.processPackets(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.getPrepExecResponse(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PreparedStatementExecutionRequest.executeStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.CancelableRequest.execute(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeRequest(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeUpdate(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:101)
+	at util.MoDBRW.execSQLUpdate(MoDBRW.java:227)
+	at weapon.UseWeapon.insertDB(UseWeapon.java:131)
+	at weapon.UseWeapon.main(UseWeapon.java:65)
+ INFO 24 九月 14:59:51,059 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus(type,from,wdate,weaponid,amount) VALUES(?,?,?,?,?) =97
+ERROR 24 九月 14:59:51,151 -(              MoDBRW.java: 229) - execSQLUpdate error
+com.microsoft.sqlserver.jdbc.SQLServerException: Incorrect syntax near the keyword 'from'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.IOBuffer.processPackets(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.getPrepExecResponse(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PreparedStatementExecutionRequest.executeStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.CancelableRequest.execute(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeRequest(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeUpdate(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:101)
+	at util.MoDBRW.execSQLUpdate(MoDBRW.java:227)
+	at weapon.UseWeapon.insertDB(UseWeapon.java:131)
+	at weapon.UseWeapon.main(UseWeapon.java:65)
+ INFO 24 九月 14:59:51,152 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus(type,from,wdate,weaponid,amount) VALUES(?,?,?,?,?) =92
+ERROR 24 九月 14:59:51,243 -(              MoDBRW.java: 229) - execSQLUpdate error
+com.microsoft.sqlserver.jdbc.SQLServerException: Incorrect syntax near the keyword 'from'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.IOBuffer.processPackets(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.getPrepExecResponse(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PreparedStatementExecutionRequest.executeStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.CancelableRequest.execute(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeRequest(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeUpdate(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:101)
+	at util.MoDBRW.execSQLUpdate(MoDBRW.java:227)
+	at weapon.UseWeapon.insertDB(UseWeapon.java:131)
+	at weapon.UseWeapon.main(UseWeapon.java:65)
+ INFO 24 九月 14:59:51,244 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus(type,from,wdate,weaponid,amount) VALUES(?,?,?,?,?) =92
+ERROR 24 九月 14:59:51,331 -(              MoDBRW.java: 229) - execSQLUpdate error
+com.microsoft.sqlserver.jdbc.SQLServerException: Incorrect syntax near the keyword 'from'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.IOBuffer.processPackets(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.getPrepExecResponse(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PreparedStatementExecutionRequest.executeStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.CancelableRequest.execute(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeRequest(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeUpdate(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:101)
+	at util.MoDBRW.execSQLUpdate(MoDBRW.java:227)
+	at weapon.UseWeapon.insertDB(UseWeapon.java:131)
+	at weapon.UseWeapon.main(UseWeapon.java:65)
+ INFO 24 九月 14:59:51,332 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus(type,from,wdate,weaponid,amount) VALUES(?,?,?,?,?) =88
+ERROR 24 九月 14:59:51,412 -(              MoDBRW.java: 229) - execSQLUpdate error
+com.microsoft.sqlserver.jdbc.SQLServerException: Incorrect syntax near the keyword 'from'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.IOBuffer.processPackets(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.getPrepExecResponse(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PreparedStatementExecutionRequest.executeStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.CancelableRequest.execute(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeRequest(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeUpdate(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:101)
+	at util.MoDBRW.execSQLUpdate(MoDBRW.java:227)
+	at weapon.UseWeapon.insertDB(UseWeapon.java:131)
+	at weapon.UseWeapon.main(UseWeapon.java:65)
+ INFO 24 九月 14:59:51,413 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus(type,from,wdate,weaponid,amount) VALUES(?,?,?,?,?) =81
+ERROR 24 九月 14:59:51,510 -(              MoDBRW.java: 229) - execSQLUpdate error
+com.microsoft.sqlserver.jdbc.SQLServerException: Incorrect syntax near the keyword 'from'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.IOBuffer.processPackets(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.getPrepExecResponse(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PreparedStatementExecutionRequest.executeStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.CancelableRequest.execute(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeRequest(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeUpdate(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:101)
+	at util.MoDBRW.execSQLUpdate(MoDBRW.java:227)
+	at weapon.UseWeapon.insertDB(UseWeapon.java:131)
+	at weapon.UseWeapon.main(UseWeapon.java:65)
+ INFO 24 九月 14:59:51,511 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus(type,from,wdate,weaponid,amount) VALUES(?,?,?,?,?) =98
+ERROR 24 九月 14:59:51,600 -(              MoDBRW.java: 229) - execSQLUpdate error
+com.microsoft.sqlserver.jdbc.SQLServerException: Incorrect syntax near the keyword 'from'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.IOBuffer.processPackets(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.getPrepExecResponse(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PreparedStatementExecutionRequest.executeStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.CancelableRequest.execute(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeRequest(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeUpdate(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:101)
+	at util.MoDBRW.execSQLUpdate(MoDBRW.java:227)
+	at weapon.UseWeapon.insertDB(UseWeapon.java:131)
+	at weapon.UseWeapon.main(UseWeapon.java:65)
+ INFO 24 九月 14:59:51,601 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus(type,from,wdate,weaponid,amount) VALUES(?,?,?,?,?) =90
+ERROR 24 九月 14:59:51,697 -(              MoDBRW.java: 229) - execSQLUpdate error
+com.microsoft.sqlserver.jdbc.SQLServerException: Incorrect syntax near the keyword 'from'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.IOBuffer.processPackets(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.getPrepExecResponse(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PreparedStatementExecutionRequest.executeStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.CancelableRequest.execute(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeRequest(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeUpdate(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:101)
+	at util.MoDBRW.execSQLUpdate(MoDBRW.java:227)
+	at weapon.UseWeapon.insertDB(UseWeapon.java:131)
+	at weapon.UseWeapon.main(UseWeapon.java:66)
+ INFO 24 九月 14:59:51,697 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus(type,from,wdate,weaponid,amount) VALUES(?,?,?,?,?) =96
+ERROR 24 九月 14:59:51,789 -(              MoDBRW.java: 229) - execSQLUpdate error
+com.microsoft.sqlserver.jdbc.SQLServerException: Incorrect syntax near the keyword 'from'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.IOBuffer.processPackets(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.getPrepExecResponse(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PreparedStatementExecutionRequest.executeStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.CancelableRequest.execute(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeRequest(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeUpdate(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:101)
+	at util.MoDBRW.execSQLUpdate(MoDBRW.java:227)
+	at weapon.UseWeapon.insertDB(UseWeapon.java:131)
+	at weapon.UseWeapon.main(UseWeapon.java:66)
+ INFO 24 九月 14:59:51,790 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus(type,from,wdate,weaponid,amount) VALUES(?,?,?,?,?) =92
+ERROR 24 九月 14:59:51,885 -(              MoDBRW.java: 229) - execSQLUpdate error
+com.microsoft.sqlserver.jdbc.SQLServerException: Incorrect syntax near the keyword 'from'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.IOBuffer.processPackets(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.getPrepExecResponse(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PreparedStatementExecutionRequest.executeStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.CancelableRequest.execute(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeRequest(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeUpdate(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:101)
+	at util.MoDBRW.execSQLUpdate(MoDBRW.java:227)
+	at weapon.UseWeapon.insertDB(UseWeapon.java:131)
+	at weapon.UseWeapon.main(UseWeapon.java:66)
+ INFO 24 九月 14:59:51,886 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus(type,from,wdate,weaponid,amount) VALUES(?,?,?,?,?) =95
+ERROR 24 九月 14:59:51,972 -(              MoDBRW.java: 229) - execSQLUpdate error
+com.microsoft.sqlserver.jdbc.SQLServerException: Incorrect syntax near the keyword 'from'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.IOBuffer.processPackets(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.getPrepExecResponse(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PreparedStatementExecutionRequest.executeStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.CancelableRequest.execute(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeRequest(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeUpdate(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:101)
+	at util.MoDBRW.execSQLUpdate(MoDBRW.java:227)
+	at weapon.UseWeapon.insertDB(UseWeapon.java:131)
+	at weapon.UseWeapon.main(UseWeapon.java:66)
+ INFO 24 九月 14:59:51,972 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus(type,from,wdate,weaponid,amount) VALUES(?,?,?,?,?) =86
+ERROR 24 九月 14:59:52,060 -(              MoDBRW.java: 229) - execSQLUpdate error
+com.microsoft.sqlserver.jdbc.SQLServerException: Incorrect syntax near the keyword 'from'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.IOBuffer.processPackets(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.getPrepExecResponse(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PreparedStatementExecutionRequest.executeStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.CancelableRequest.execute(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeRequest(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeUpdate(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:101)
+	at util.MoDBRW.execSQLUpdate(MoDBRW.java:227)
+	at weapon.UseWeapon.insertDB(UseWeapon.java:131)
+	at weapon.UseWeapon.main(UseWeapon.java:66)
+ INFO 24 九月 14:59:52,060 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus(type,from,wdate,weaponid,amount) VALUES(?,?,?,?,?) =87
+ERROR 24 九月 14:59:52,144 -(              MoDBRW.java: 229) - execSQLUpdate error
+com.microsoft.sqlserver.jdbc.SQLServerException: Incorrect syntax near the keyword 'from'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.IOBuffer.processPackets(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.getPrepExecResponse(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PreparedStatementExecutionRequest.executeStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.CancelableRequest.execute(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeRequest(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeUpdate(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:101)
+	at util.MoDBRW.execSQLUpdate(MoDBRW.java:227)
+	at weapon.UseWeapon.insertDB(UseWeapon.java:131)
+	at weapon.UseWeapon.main(UseWeapon.java:66)
+ INFO 24 九月 14:59:52,145 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus(type,from,wdate,weaponid,amount) VALUES(?,?,?,?,?) =84
+ERROR 24 九月 14:59:52,250 -(              MoDBRW.java: 229) - execSQLUpdate error
+com.microsoft.sqlserver.jdbc.SQLServerException: Incorrect syntax near the keyword 'from'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.IOBuffer.processPackets(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.getPrepExecResponse(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PreparedStatementExecutionRequest.executeStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.CancelableRequest.execute(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeRequest(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeUpdate(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:101)
+	at util.MoDBRW.execSQLUpdate(MoDBRW.java:227)
+	at weapon.UseWeapon.insertDB(UseWeapon.java:131)
+	at weapon.UseWeapon.main(UseWeapon.java:66)
+ INFO 24 九月 14:59:52,251 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus(type,from,wdate,weaponid,amount) VALUES(?,?,?,?,?) =106
+ INFO 24 九月 15:06:37,064 -(              MoDBRW.java: 132) - execSQL: select weaponid ,count(weaponid) num from ( select substring(msg,charindex('n:',msg)+2,2) weaponid from user_event where msg like ? and server_date between  ? and ? ) a group by weaponid  =1293
+ INFO 24 九月 15:06:37,436 -(              MoDBRW.java: 132) - execSQL: select weaponid ,count(weaponid) num from ( select substring(msg,charindex('n:',msg)+2,2) weaponid from user_event where msg like ? and server_date between  ? and ? ) a group by weaponid  =370
+ INFO 24 九月 15:06:38,134 -(              MoDBRW.java: 132) - execSQL: select itemid,itemAmount from shopitem where itemtype='weapon' =698
+ INFO 24 九月 15:06:39,115 -(              MoDBRW.java: 132) - execSQL: select substring(weaponid,1,charindex(':',weaponid)-1) weaponid ,itemid from ( select  substring(msg,charindex(':',msg)+1,3) weaponid,  		  substring(msg,charindex('.',msg)+3,charindex('/,',msg)-charindex('.',msg)-3) itemid from user_event where msg like 'action=buyWeaponByC%' and server_date between ? and ? ) a  =981
+ INFO 24 九月 15:06:39,778 -(              MoDBRW.java: 132) - execSQL: select weaponid ,count(weaponid) num from ( select substring(msg,charindex(':',msg)+1,2) weaponid from user_event where msg like 'action=buyWeaponByG%' and server_date between ? and ? ) a group by weaponid  =660
+ERROR 24 九月 15:06:40,245 -(              MoDBRW.java: 229) - execSQLUpdate error
+com.microsoft.sqlserver.jdbc.SQLServerException: Invalid column name 'type'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.IOBuffer.processPackets(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.getPrepExecResponse(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PreparedStatementExecutionRequest.executeStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.CancelableRequest.execute(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeRequest(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeUpdate(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:101)
+	at util.MoDBRW.execSQLUpdate(MoDBRW.java:227)
+	at weapon.UseWeapon.insertDB(UseWeapon.java:131)
+	at weapon.UseWeapon.main(UseWeapon.java:65)
+ INFO 24 九月 15:06:40,246 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus('type','from','wdate','weaponid','amount') VALUES(?,?,?,?,?) =467
+ERROR 24 九月 15:06:40,330 -(              MoDBRW.java: 229) - execSQLUpdate error
+com.microsoft.sqlserver.jdbc.SQLServerException: Invalid column name 'type'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.IOBuffer.processPackets(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.getPrepExecResponse(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PreparedStatementExecutionRequest.executeStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.CancelableRequest.execute(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeRequest(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeUpdate(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:101)
+	at util.MoDBRW.execSQLUpdate(MoDBRW.java:227)
+	at weapon.UseWeapon.insertDB(UseWeapon.java:131)
+	at weapon.UseWeapon.main(UseWeapon.java:65)
+ INFO 24 九月 15:06:40,331 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus('type','from','wdate','weaponid','amount') VALUES(?,?,?,?,?) =85
+ERROR 24 九月 15:06:40,416 -(              MoDBRW.java: 229) - execSQLUpdate error
+com.microsoft.sqlserver.jdbc.SQLServerException: Invalid column name 'type'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.IOBuffer.processPackets(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.getPrepExecResponse(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PreparedStatementExecutionRequest.executeStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.CancelableRequest.execute(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeRequest(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeUpdate(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:101)
+	at util.MoDBRW.execSQLUpdate(MoDBRW.java:227)
+	at weapon.UseWeapon.insertDB(UseWeapon.java:131)
+	at weapon.UseWeapon.main(UseWeapon.java:65)
+ INFO 24 九月 15:06:40,417 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus('type','from','wdate','weaponid','amount') VALUES(?,?,?,?,?) =86
+ERROR 24 九月 15:06:40,510 -(              MoDBRW.java: 229) - execSQLUpdate error
+com.microsoft.sqlserver.jdbc.SQLServerException: Invalid column name 'type'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.IOBuffer.processPackets(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.getPrepExecResponse(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PreparedStatementExecutionRequest.executeStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.CancelableRequest.execute(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeRequest(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeUpdate(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:101)
+	at util.MoDBRW.execSQLUpdate(MoDBRW.java:227)
+	at weapon.UseWeapon.insertDB(UseWeapon.java:131)
+	at weapon.UseWeapon.main(UseWeapon.java:65)
+ INFO 24 九月 15:06:40,510 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus('type','from','wdate','weaponid','amount') VALUES(?,?,?,?,?) =93
+ERROR 24 九月 15:06:40,601 -(              MoDBRW.java: 229) - execSQLUpdate error
+com.microsoft.sqlserver.jdbc.SQLServerException: Invalid column name 'type'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.IOBuffer.processPackets(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.getPrepExecResponse(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PreparedStatementExecutionRequest.executeStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.CancelableRequest.execute(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeRequest(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeUpdate(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:101)
+	at util.MoDBRW.execSQLUpdate(MoDBRW.java:227)
+	at weapon.UseWeapon.insertDB(UseWeapon.java:131)
+	at weapon.UseWeapon.main(UseWeapon.java:65)
+ INFO 24 九月 15:06:40,602 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus('type','from','wdate','weaponid','amount') VALUES(?,?,?,?,?) =92
+ERROR 24 九月 15:06:40,690 -(              MoDBRW.java: 229) - execSQLUpdate error
+com.microsoft.sqlserver.jdbc.SQLServerException: Invalid column name 'type'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.IOBuffer.processPackets(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.getPrepExecResponse(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PreparedStatementExecutionRequest.executeStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.CancelableRequest.execute(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeRequest(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeUpdate(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:101)
+	at util.MoDBRW.execSQLUpdate(MoDBRW.java:227)
+	at weapon.UseWeapon.insertDB(UseWeapon.java:131)
+	at weapon.UseWeapon.main(UseWeapon.java:65)
+ INFO 24 九月 15:06:40,690 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus('type','from','wdate','weaponid','amount') VALUES(?,?,?,?,?) =88
+ERROR 24 九月 15:06:40,784 -(              MoDBRW.java: 229) - execSQLUpdate error
+com.microsoft.sqlserver.jdbc.SQLServerException: Invalid column name 'type'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.IOBuffer.processPackets(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.getPrepExecResponse(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PreparedStatementExecutionRequest.executeStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.CancelableRequest.execute(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeRequest(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeUpdate(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:101)
+	at util.MoDBRW.execSQLUpdate(MoDBRW.java:227)
+	at weapon.UseWeapon.insertDB(UseWeapon.java:131)
+	at weapon.UseWeapon.main(UseWeapon.java:65)
+ INFO 24 九月 15:06:40,784 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus('type','from','wdate','weaponid','amount') VALUES(?,?,?,?,?) =94
+ERROR 24 九月 15:06:40,874 -(              MoDBRW.java: 229) - execSQLUpdate error
+com.microsoft.sqlserver.jdbc.SQLServerException: Invalid column name 'type'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.IOBuffer.processPackets(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.getPrepExecResponse(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PreparedStatementExecutionRequest.executeStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.CancelableRequest.execute(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeRequest(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeUpdate(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:101)
+	at util.MoDBRW.execSQLUpdate(MoDBRW.java:227)
+	at weapon.UseWeapon.insertDB(UseWeapon.java:131)
+	at weapon.UseWeapon.main(UseWeapon.java:65)
+ INFO 24 九月 15:06:40,875 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus('type','from','wdate','weaponid','amount') VALUES(?,?,?,?,?) =90
+ERROR 24 九月 15:06:40,971 -(              MoDBRW.java: 229) - execSQLUpdate error
+com.microsoft.sqlserver.jdbc.SQLServerException: Invalid column name 'type'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.IOBuffer.processPackets(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.getPrepExecResponse(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PreparedStatementExecutionRequest.executeStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.CancelableRequest.execute(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeRequest(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeUpdate(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:101)
+	at util.MoDBRW.execSQLUpdate(MoDBRW.java:227)
+	at weapon.UseWeapon.insertDB(UseWeapon.java:131)
+	at weapon.UseWeapon.main(UseWeapon.java:65)
+ INFO 24 九月 15:06:40,971 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus('type','from','wdate','weaponid','amount') VALUES(?,?,?,?,?) =96
+ERROR 24 九月 15:06:41,063 -(              MoDBRW.java: 229) - execSQLUpdate error
+com.microsoft.sqlserver.jdbc.SQLServerException: Invalid column name 'type'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.IOBuffer.processPackets(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.getPrepExecResponse(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PreparedStatementExecutionRequest.executeStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.CancelableRequest.execute(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeRequest(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeUpdate(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:101)
+	at util.MoDBRW.execSQLUpdate(MoDBRW.java:227)
+	at weapon.UseWeapon.insertDB(UseWeapon.java:131)
+	at weapon.UseWeapon.main(UseWeapon.java:65)
+ INFO 24 九月 15:06:41,063 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus('type','from','wdate','weaponid','amount') VALUES(?,?,?,?,?) =91
+ERROR 24 九月 15:06:41,153 -(              MoDBRW.java: 229) - execSQLUpdate error
+com.microsoft.sqlserver.jdbc.SQLServerException: Invalid column name 'type'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.IOBuffer.processPackets(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.getPrepExecResponse(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PreparedStatementExecutionRequest.executeStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.CancelableRequest.execute(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeRequest(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeUpdate(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:101)
+	at util.MoDBRW.execSQLUpdate(MoDBRW.java:227)
+	at weapon.UseWeapon.insertDB(UseWeapon.java:131)
+	at weapon.UseWeapon.main(UseWeapon.java:65)
+ INFO 24 九月 15:06:41,154 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus('type','from','wdate','weaponid','amount') VALUES(?,?,?,?,?) =90
+ERROR 24 九月 15:06:41,244 -(              MoDBRW.java: 229) - execSQLUpdate error
+com.microsoft.sqlserver.jdbc.SQLServerException: Invalid column name 'type'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.IOBuffer.processPackets(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.getPrepExecResponse(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PreparedStatementExecutionRequest.executeStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.CancelableRequest.execute(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeRequest(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeUpdate(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:101)
+	at util.MoDBRW.execSQLUpdate(MoDBRW.java:227)
+	at weapon.UseWeapon.insertDB(UseWeapon.java:131)
+	at weapon.UseWeapon.main(UseWeapon.java:65)
+ INFO 24 九月 15:06:41,244 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus('type','from','wdate','weaponid','amount') VALUES(?,?,?,?,?) =90
+ERROR 24 九月 15:06:41,325 -(              MoDBRW.java: 229) - execSQLUpdate error
+com.microsoft.sqlserver.jdbc.SQLServerException: Invalid column name 'type'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.IOBuffer.processPackets(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.getPrepExecResponse(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PreparedStatementExecutionRequest.executeStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.CancelableRequest.execute(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeRequest(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeUpdate(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:101)
+	at util.MoDBRW.execSQLUpdate(MoDBRW.java:227)
+	at weapon.UseWeapon.insertDB(UseWeapon.java:131)
+	at weapon.UseWeapon.main(UseWeapon.java:66)
+ INFO 24 九月 15:06:41,326 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus('type','from','wdate','weaponid','amount') VALUES(?,?,?,?,?) =81
+ERROR 24 九月 15:06:41,405 -(              MoDBRW.java: 229) - execSQLUpdate error
+com.microsoft.sqlserver.jdbc.SQLServerException: Invalid column name 'type'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.IOBuffer.processPackets(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.getPrepExecResponse(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PreparedStatementExecutionRequest.executeStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.CancelableRequest.execute(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeRequest(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeUpdate(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:101)
+	at util.MoDBRW.execSQLUpdate(MoDBRW.java:227)
+	at weapon.UseWeapon.insertDB(UseWeapon.java:131)
+	at weapon.UseWeapon.main(UseWeapon.java:66)
+ INFO 24 九月 15:06:41,406 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus('type','from','wdate','weaponid','amount') VALUES(?,?,?,?,?) =80
+ERROR 24 九月 15:06:41,486 -(              MoDBRW.java: 229) - execSQLUpdate error
+com.microsoft.sqlserver.jdbc.SQLServerException: Invalid column name 'type'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.IOBuffer.processPackets(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.getPrepExecResponse(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PreparedStatementExecutionRequest.executeStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.CancelableRequest.execute(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeRequest(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeUpdate(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:101)
+	at util.MoDBRW.execSQLUpdate(MoDBRW.java:227)
+	at weapon.UseWeapon.insertDB(UseWeapon.java:131)
+	at weapon.UseWeapon.main(UseWeapon.java:66)
+ INFO 24 九月 15:06:41,487 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus('type','from','wdate','weaponid','amount') VALUES(?,?,?,?,?) =81
+ERROR 24 九月 15:06:41,575 -(              MoDBRW.java: 229) - execSQLUpdate error
+com.microsoft.sqlserver.jdbc.SQLServerException: Invalid column name 'type'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.IOBuffer.processPackets(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.getPrepExecResponse(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PreparedStatementExecutionRequest.executeStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.CancelableRequest.execute(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeRequest(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeUpdate(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:101)
+	at util.MoDBRW.execSQLUpdate(MoDBRW.java:227)
+	at weapon.UseWeapon.insertDB(UseWeapon.java:131)
+	at weapon.UseWeapon.main(UseWeapon.java:66)
+ INFO 24 九月 15:06:41,575 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus('type','from','wdate','weaponid','amount') VALUES(?,?,?,?,?) =88
+ERROR 24 九月 15:06:41,671 -(              MoDBRW.java: 229) - execSQLUpdate error
+com.microsoft.sqlserver.jdbc.SQLServerException: Invalid column name 'type'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.IOBuffer.processPackets(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.getPrepExecResponse(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PreparedStatementExecutionRequest.executeStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.CancelableRequest.execute(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeRequest(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeUpdate(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:101)
+	at util.MoDBRW.execSQLUpdate(MoDBRW.java:227)
+	at weapon.UseWeapon.insertDB(UseWeapon.java:131)
+	at weapon.UseWeapon.main(UseWeapon.java:66)
+ INFO 24 九月 15:06:41,672 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus('type','from','wdate','weaponid','amount') VALUES(?,?,?,?,?) =96
+ERROR 24 九月 15:06:41,765 -(              MoDBRW.java: 229) - execSQLUpdate error
+com.microsoft.sqlserver.jdbc.SQLServerException: Invalid column name 'type'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.IOBuffer.processPackets(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.getPrepExecResponse(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PreparedStatementExecutionRequest.executeStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.CancelableRequest.execute(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeRequest(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeUpdate(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:101)
+	at util.MoDBRW.execSQLUpdate(MoDBRW.java:227)
+	at weapon.UseWeapon.insertDB(UseWeapon.java:131)
+	at weapon.UseWeapon.main(UseWeapon.java:66)
+ INFO 24 九月 15:06:41,765 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus('type','from','wdate','weaponid','amount') VALUES(?,?,?,?,?) =93
+ERROR 24 九月 15:06:41,864 -(              MoDBRW.java: 229) - execSQLUpdate error
+com.microsoft.sqlserver.jdbc.SQLServerException: Invalid column name 'type'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.IOBuffer.processPackets(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.getPrepExecResponse(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PreparedStatementExecutionRequest.executeStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.CancelableRequest.execute(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeRequest(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeUpdate(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:101)
+	at util.MoDBRW.execSQLUpdate(MoDBRW.java:227)
+	at weapon.UseWeapon.insertDB(UseWeapon.java:131)
+	at weapon.UseWeapon.main(UseWeapon.java:66)
+ INFO 24 九月 15:06:41,865 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus('type','from','wdate','weaponid','amount') VALUES(?,?,?,?,?) =100
+ERROR 24 九月 15:06:41,943 -(              MoDBRW.java: 229) - execSQLUpdate error
+com.microsoft.sqlserver.jdbc.SQLServerException: Invalid column name 'type'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.IOBuffer.processPackets(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.getPrepExecResponse(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PreparedStatementExecutionRequest.executeStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.CancelableRequest.execute(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeRequest(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeUpdate(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:101)
+	at util.MoDBRW.execSQLUpdate(MoDBRW.java:227)
+	at weapon.UseWeapon.insertDB(UseWeapon.java:131)
+	at weapon.UseWeapon.main(UseWeapon.java:66)
+ INFO 24 九月 15:06:41,944 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus('type','from','wdate','weaponid','amount') VALUES(?,?,?,?,?) =79
+ERROR 24 九月 15:06:42,025 -(              MoDBRW.java: 229) - execSQLUpdate error
+com.microsoft.sqlserver.jdbc.SQLServerException: Invalid column name 'type'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.IOBuffer.processPackets(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.getPrepExecResponse(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PreparedStatementExecutionRequest.executeStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.CancelableRequest.execute(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeRequest(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeUpdate(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:101)
+	at util.MoDBRW.execSQLUpdate(MoDBRW.java:227)
+	at weapon.UseWeapon.insertDB(UseWeapon.java:131)
+	at weapon.UseWeapon.main(UseWeapon.java:66)
+ INFO 24 九月 15:06:42,026 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus('type','from','wdate','weaponid','amount') VALUES(?,?,?,?,?) =81
+ERROR 24 九月 15:06:42,117 -(              MoDBRW.java: 229) - execSQLUpdate error
+com.microsoft.sqlserver.jdbc.SQLServerException: Invalid column name 'type'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.IOBuffer.processPackets(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.getPrepExecResponse(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PreparedStatementExecutionRequest.executeStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.CancelableRequest.execute(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeRequest(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeUpdate(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:101)
+	at util.MoDBRW.execSQLUpdate(MoDBRW.java:227)
+	at weapon.UseWeapon.insertDB(UseWeapon.java:131)
+	at weapon.UseWeapon.main(UseWeapon.java:67)
+ INFO 24 九月 15:06:42,118 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus('type','from','wdate','weaponid','amount') VALUES(?,?,?,?,?) =92
+ERROR 24 九月 15:06:42,198 -(              MoDBRW.java: 229) - execSQLUpdate error
+com.microsoft.sqlserver.jdbc.SQLServerException: Invalid column name 'type'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.IOBuffer.processPackets(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.getPrepExecResponse(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PreparedStatementExecutionRequest.executeStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.CancelableRequest.execute(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeRequest(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeUpdate(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:101)
+	at util.MoDBRW.execSQLUpdate(MoDBRW.java:227)
+	at weapon.UseWeapon.insertDB(UseWeapon.java:131)
+	at weapon.UseWeapon.main(UseWeapon.java:67)
+ INFO 24 九月 15:06:42,198 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus('type','from','wdate','weaponid','amount') VALUES(?,?,?,?,?) =80
+ERROR 24 九月 15:06:42,279 -(              MoDBRW.java: 229) - execSQLUpdate error
+com.microsoft.sqlserver.jdbc.SQLServerException: Invalid column name 'type'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.IOBuffer.processPackets(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.getPrepExecResponse(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PreparedStatementExecutionRequest.executeStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.CancelableRequest.execute(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeRequest(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeUpdate(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:101)
+	at util.MoDBRW.execSQLUpdate(MoDBRW.java:227)
+	at weapon.UseWeapon.insertDB(UseWeapon.java:131)
+	at weapon.UseWeapon.main(UseWeapon.java:67)
+ INFO 24 九月 15:06:42,279 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus('type','from','wdate','weaponid','amount') VALUES(?,?,?,?,?) =80
+ERROR 24 九月 15:06:42,364 -(              MoDBRW.java: 229) - execSQLUpdate error
+com.microsoft.sqlserver.jdbc.SQLServerException: Invalid column name 'type'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.IOBuffer.processPackets(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.getPrepExecResponse(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PreparedStatementExecutionRequest.executeStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.CancelableRequest.execute(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeRequest(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeUpdate(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:101)
+	at util.MoDBRW.execSQLUpdate(MoDBRW.java:227)
+	at weapon.UseWeapon.insertDB(UseWeapon.java:131)
+	at weapon.UseWeapon.main(UseWeapon.java:67)
+ INFO 24 九月 15:06:42,365 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus('type','from','wdate','weaponid','amount') VALUES(?,?,?,?,?) =85
+ERROR 24 九月 15:06:42,451 -(              MoDBRW.java: 229) - execSQLUpdate error
+com.microsoft.sqlserver.jdbc.SQLServerException: Invalid column name 'type'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.IOBuffer.processPackets(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.getPrepExecResponse(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PreparedStatementExecutionRequest.executeStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.CancelableRequest.execute(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeRequest(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeUpdate(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:101)
+	at util.MoDBRW.execSQLUpdate(MoDBRW.java:227)
+	at weapon.UseWeapon.insertDB(UseWeapon.java:131)
+	at weapon.UseWeapon.main(UseWeapon.java:67)
+ INFO 24 九月 15:06:42,452 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus('type','from','wdate','weaponid','amount') VALUES(?,?,?,?,?) =87
+ERROR 24 九月 15:06:42,540 -(              MoDBRW.java: 229) - execSQLUpdate error
+com.microsoft.sqlserver.jdbc.SQLServerException: Invalid column name 'type'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.IOBuffer.processPackets(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.getPrepExecResponse(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PreparedStatementExecutionRequest.executeStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.CancelableRequest.execute(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeRequest(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeUpdate(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:101)
+	at util.MoDBRW.execSQLUpdate(MoDBRW.java:227)
+	at weapon.UseWeapon.insertDB(UseWeapon.java:131)
+	at weapon.UseWeapon.main(UseWeapon.java:67)
+ INFO 24 九月 15:06:42,541 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus('type','from','wdate','weaponid','amount') VALUES(?,?,?,?,?) =89
+ERROR 24 九月 15:06:42,624 -(              MoDBRW.java: 229) - execSQLUpdate error
+com.microsoft.sqlserver.jdbc.SQLServerException: Invalid column name 'type'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.IOBuffer.processPackets(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.getPrepExecResponse(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PreparedStatementExecutionRequest.executeStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.CancelableRequest.execute(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeRequest(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeUpdate(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:101)
+	at util.MoDBRW.execSQLUpdate(MoDBRW.java:227)
+	at weapon.UseWeapon.insertDB(UseWeapon.java:131)
+	at weapon.UseWeapon.main(UseWeapon.java:67)
+ INFO 24 九月 15:06:42,624 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus('type','from','wdate','weaponid','amount') VALUES(?,?,?,?,?) =83
+ERROR 24 九月 15:06:42,709 -(              MoDBRW.java: 229) - execSQLUpdate error
+com.microsoft.sqlserver.jdbc.SQLServerException: Invalid column name 'type'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.IOBuffer.processPackets(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.getPrepExecResponse(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PreparedStatementExecutionRequest.executeStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.CancelableRequest.execute(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeRequest(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeUpdate(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:101)
+	at util.MoDBRW.execSQLUpdate(MoDBRW.java:227)
+	at weapon.UseWeapon.insertDB(UseWeapon.java:131)
+	at weapon.UseWeapon.main(UseWeapon.java:67)
+ INFO 24 九月 15:06:42,709 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus('type','from','wdate','weaponid','amount') VALUES(?,?,?,?,?) =85
+ERROR 24 九月 15:06:42,791 -(              MoDBRW.java: 229) - execSQLUpdate error
+com.microsoft.sqlserver.jdbc.SQLServerException: Invalid column name 'type'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.IOBuffer.processPackets(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.getPrepExecResponse(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PreparedStatementExecutionRequest.executeStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.CancelableRequest.execute(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeRequest(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeUpdate(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:101)
+	at util.MoDBRW.execSQLUpdate(MoDBRW.java:227)
+	at weapon.UseWeapon.insertDB(UseWeapon.java:131)
+	at weapon.UseWeapon.main(UseWeapon.java:67)
+ INFO 24 九月 15:06:42,791 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus('type','from','wdate','weaponid','amount') VALUES(?,?,?,?,?) =82
+ERROR 24 九月 15:06:42,874 -(              MoDBRW.java: 229) - execSQLUpdate error
+com.microsoft.sqlserver.jdbc.SQLServerException: Invalid column name 'type'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.IOBuffer.processPackets(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.getPrepExecResponse(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PreparedStatementExecutionRequest.executeStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.CancelableRequest.execute(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeRequest(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeUpdate(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:101)
+	at util.MoDBRW.execSQLUpdate(MoDBRW.java:227)
+	at weapon.UseWeapon.insertDB(UseWeapon.java:131)
+	at weapon.UseWeapon.main(UseWeapon.java:67)
+ INFO 24 九月 15:06:42,875 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus('type','from','wdate','weaponid','amount') VALUES(?,?,?,?,?) =83
+ERROR 24 九月 15:06:42,962 -(              MoDBRW.java: 229) - execSQLUpdate error
+com.microsoft.sqlserver.jdbc.SQLServerException: Invalid column name 'type'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.IOBuffer.processPackets(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.getPrepExecResponse(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PreparedStatementExecutionRequest.executeStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.CancelableRequest.execute(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeRequest(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeUpdate(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:101)
+	at util.MoDBRW.execSQLUpdate(MoDBRW.java:227)
+	at weapon.UseWeapon.insertDB(UseWeapon.java:131)
+	at weapon.UseWeapon.main(UseWeapon.java:67)
+ INFO 24 九月 15:06:42,962 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus('type','from','wdate','weaponid','amount') VALUES(?,?,?,?,?) =87
+ERROR 24 九月 15:06:43,056 -(              MoDBRW.java: 229) - execSQLUpdate error
+com.microsoft.sqlserver.jdbc.SQLServerException: Invalid column name 'type'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.IOBuffer.processPackets(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.getPrepExecResponse(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PreparedStatementExecutionRequest.executeStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.CancelableRequest.execute(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeRequest(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeUpdate(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:101)
+	at util.MoDBRW.execSQLUpdate(MoDBRW.java:227)
+	at weapon.UseWeapon.insertDB(UseWeapon.java:131)
+	at weapon.UseWeapon.main(UseWeapon.java:67)
+ INFO 24 九月 15:06:43,057 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus('type','from','wdate','weaponid','amount') VALUES(?,?,?,?,?) =94
+ERROR 24 九月 15:06:43,159 -(              MoDBRW.java: 229) - execSQLUpdate error
+com.microsoft.sqlserver.jdbc.SQLServerException: Invalid column name 'type'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.IOBuffer.processPackets(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.getPrepExecResponse(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PreparedStatementExecutionRequest.executeStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.CancelableRequest.execute(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeRequest(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeUpdate(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:101)
+	at util.MoDBRW.execSQLUpdate(MoDBRW.java:227)
+	at weapon.UseWeapon.insertDB(UseWeapon.java:131)
+	at weapon.UseWeapon.main(UseWeapon.java:67)
+ INFO 24 九月 15:06:43,159 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus('type','from','wdate','weaponid','amount') VALUES(?,?,?,?,?) =102
+ERROR 24 九月 15:06:43,241 -(              MoDBRW.java: 229) - execSQLUpdate error
+com.microsoft.sqlserver.jdbc.SQLServerException: Invalid column name 'type'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.IOBuffer.processPackets(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.getPrepExecResponse(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PreparedStatementExecutionRequest.executeStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.CancelableRequest.execute(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeRequest(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeUpdate(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:101)
+	at util.MoDBRW.execSQLUpdate(MoDBRW.java:227)
+	at weapon.UseWeapon.insertDB(UseWeapon.java:131)
+	at weapon.UseWeapon.main(UseWeapon.java:67)
+ INFO 24 九月 15:06:43,242 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus('type','from','wdate','weaponid','amount') VALUES(?,?,?,?,?) =82
+ERROR 24 九月 15:06:43,324 -(              MoDBRW.java: 229) - execSQLUpdate error
+com.microsoft.sqlserver.jdbc.SQLServerException: Invalid column name 'type'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.IOBuffer.processPackets(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.getPrepExecResponse(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PreparedStatementExecutionRequest.executeStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.CancelableRequest.execute(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeRequest(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeUpdate(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:101)
+	at util.MoDBRW.execSQLUpdate(MoDBRW.java:227)
+	at weapon.UseWeapon.insertDB(UseWeapon.java:131)
+	at weapon.UseWeapon.main(UseWeapon.java:67)
+ INFO 24 九月 15:06:43,324 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus('type','from','wdate','weaponid','amount') VALUES(?,?,?,?,?) =82
+ERROR 24 九月 15:06:43,404 -(              MoDBRW.java: 229) - execSQLUpdate error
+com.microsoft.sqlserver.jdbc.SQLServerException: Invalid column name 'type'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.IOBuffer.processPackets(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.getPrepExecResponse(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PreparedStatementExecutionRequest.executeStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.CancelableRequest.execute(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeRequest(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeUpdate(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:101)
+	at util.MoDBRW.execSQLUpdate(MoDBRW.java:227)
+	at weapon.UseWeapon.insertDB(UseWeapon.java:131)
+	at weapon.UseWeapon.main(UseWeapon.java:67)
+ INFO 24 九月 15:06:43,404 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus('type','from','wdate','weaponid','amount') VALUES(?,?,?,?,?) =79
+ERROR 24 九月 15:06:43,486 -(              MoDBRW.java: 229) - execSQLUpdate error
+com.microsoft.sqlserver.jdbc.SQLServerException: Invalid column name 'type'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.IOBuffer.processPackets(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.getPrepExecResponse(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PreparedStatementExecutionRequest.executeStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.CancelableRequest.execute(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeRequest(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeUpdate(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:101)
+	at util.MoDBRW.execSQLUpdate(MoDBRW.java:227)
+	at weapon.UseWeapon.insertDB(UseWeapon.java:131)
+	at weapon.UseWeapon.main(UseWeapon.java:67)
+ INFO 24 九月 15:06:43,487 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus('type','from','wdate','weaponid','amount') VALUES(?,?,?,?,?) =82
+ERROR 24 九月 15:06:43,575 -(              MoDBRW.java: 229) - execSQLUpdate error
+com.microsoft.sqlserver.jdbc.SQLServerException: Invalid column name 'type'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.IOBuffer.processPackets(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.getPrepExecResponse(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PreparedStatementExecutionRequest.executeStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.CancelableRequest.execute(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeRequest(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeUpdate(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:101)
+	at util.MoDBRW.execSQLUpdate(MoDBRW.java:227)
+	at weapon.UseWeapon.insertDB(UseWeapon.java:131)
+	at weapon.UseWeapon.main(UseWeapon.java:67)
+ INFO 24 九月 15:06:43,576 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus('type','from','wdate','weaponid','amount') VALUES(?,?,?,?,?) =89
+ERROR 24 九月 15:06:43,656 -(              MoDBRW.java: 229) - execSQLUpdate error
+com.microsoft.sqlserver.jdbc.SQLServerException: Invalid column name 'type'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.IOBuffer.processPackets(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.getPrepExecResponse(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PreparedStatementExecutionRequest.executeStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.CancelableRequest.execute(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeRequest(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeUpdate(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:101)
+	at util.MoDBRW.execSQLUpdate(MoDBRW.java:227)
+	at weapon.UseWeapon.insertDB(UseWeapon.java:131)
+	at weapon.UseWeapon.main(UseWeapon.java:68)
+ INFO 24 九月 15:06:43,656 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus('type','from','wdate','weaponid','amount') VALUES(?,?,?,?,?) =80
+ERROR 24 九月 15:06:43,747 -(              MoDBRW.java: 229) - execSQLUpdate error
+com.microsoft.sqlserver.jdbc.SQLServerException: Invalid column name 'type'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.IOBuffer.processPackets(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.getPrepExecResponse(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PreparedStatementExecutionRequest.executeStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.CancelableRequest.execute(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeRequest(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeUpdate(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:101)
+	at util.MoDBRW.execSQLUpdate(MoDBRW.java:227)
+	at weapon.UseWeapon.insertDB(UseWeapon.java:131)
+	at weapon.UseWeapon.main(UseWeapon.java:68)
+ INFO 24 九月 15:06:43,748 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus('type','from','wdate','weaponid','amount') VALUES(?,?,?,?,?) =91
+ERROR 24 九月 15:06:43,844 -(              MoDBRW.java: 229) - execSQLUpdate error
+com.microsoft.sqlserver.jdbc.SQLServerException: Invalid column name 'type'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.IOBuffer.processPackets(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.getPrepExecResponse(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PreparedStatementExecutionRequest.executeStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.CancelableRequest.execute(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeRequest(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeUpdate(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:101)
+	at util.MoDBRW.execSQLUpdate(MoDBRW.java:227)
+	at weapon.UseWeapon.insertDB(UseWeapon.java:131)
+	at weapon.UseWeapon.main(UseWeapon.java:68)
+ INFO 24 九月 15:06:43,844 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus('type','from','wdate','weaponid','amount') VALUES(?,?,?,?,?) =96
+ERROR 24 九月 15:06:43,933 -(              MoDBRW.java: 229) - execSQLUpdate error
+com.microsoft.sqlserver.jdbc.SQLServerException: Invalid column name 'type'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.IOBuffer.processPackets(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.getPrepExecResponse(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PreparedStatementExecutionRequest.executeStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.CancelableRequest.execute(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeRequest(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeUpdate(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:101)
+	at util.MoDBRW.execSQLUpdate(MoDBRW.java:227)
+	at weapon.UseWeapon.insertDB(UseWeapon.java:131)
+	at weapon.UseWeapon.main(UseWeapon.java:68)
+ INFO 24 九月 15:06:43,933 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus('type','from','wdate','weaponid','amount') VALUES(?,?,?,?,?) =88
+ERROR 24 九月 15:06:44,021 -(              MoDBRW.java: 229) - execSQLUpdate error
+com.microsoft.sqlserver.jdbc.SQLServerException: Invalid column name 'type'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.IOBuffer.processPackets(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.getPrepExecResponse(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PreparedStatementExecutionRequest.executeStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.CancelableRequest.execute(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeRequest(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeUpdate(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:101)
+	at util.MoDBRW.execSQLUpdate(MoDBRW.java:227)
+	at weapon.UseWeapon.insertDB(UseWeapon.java:131)
+	at weapon.UseWeapon.main(UseWeapon.java:68)
+ INFO 24 九月 15:06:44,022 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus('type','from','wdate','weaponid','amount') VALUES(?,?,?,?,?) =89
+ERROR 24 九月 15:06:44,106 -(              MoDBRW.java: 229) - execSQLUpdate error
+com.microsoft.sqlserver.jdbc.SQLServerException: Invalid column name 'type'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.IOBuffer.processPackets(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.getPrepExecResponse(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PreparedStatementExecutionRequest.executeStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.CancelableRequest.execute(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeRequest(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeUpdate(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:101)
+	at util.MoDBRW.execSQLUpdate(MoDBRW.java:227)
+	at weapon.UseWeapon.insertDB(UseWeapon.java:131)
+	at weapon.UseWeapon.main(UseWeapon.java:68)
+ INFO 24 九月 15:06:44,106 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus('type','from','wdate','weaponid','amount') VALUES(?,?,?,?,?) =84
+ERROR 24 九月 15:06:44,190 -(              MoDBRW.java: 229) - execSQLUpdate error
+com.microsoft.sqlserver.jdbc.SQLServerException: Invalid column name 'type'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.IOBuffer.processPackets(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.getPrepExecResponse(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PreparedStatementExecutionRequest.executeStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.CancelableRequest.execute(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeRequest(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeUpdate(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:101)
+	at util.MoDBRW.execSQLUpdate(MoDBRW.java:227)
+	at weapon.UseWeapon.insertDB(UseWeapon.java:131)
+	at weapon.UseWeapon.main(UseWeapon.java:68)
+ INFO 24 九月 15:06:44,191 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus('type','from','wdate','weaponid','amount') VALUES(?,?,?,?,?) =85
+ERROR 24 九月 15:06:44,271 -(              MoDBRW.java: 229) - execSQLUpdate error
+com.microsoft.sqlserver.jdbc.SQLServerException: Invalid column name 'type'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.IOBuffer.processPackets(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.getPrepExecResponse(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PreparedStatementExecutionRequest.executeStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.CancelableRequest.execute(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeRequest(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeUpdate(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:101)
+	at util.MoDBRW.execSQLUpdate(MoDBRW.java:227)
+	at weapon.UseWeapon.insertDB(UseWeapon.java:131)
+	at weapon.UseWeapon.main(UseWeapon.java:68)
+ INFO 24 九月 15:06:44,271 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus('type','from','wdate','weaponid','amount') VALUES(?,?,?,?,?) =80
+ERROR 24 九月 15:06:44,351 -(              MoDBRW.java: 229) - execSQLUpdate error
+com.microsoft.sqlserver.jdbc.SQLServerException: Invalid column name 'type'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.IOBuffer.processPackets(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.getPrepExecResponse(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PreparedStatementExecutionRequest.executeStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.CancelableRequest.execute(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeRequest(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeUpdate(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:101)
+	at util.MoDBRW.execSQLUpdate(MoDBRW.java:227)
+	at weapon.UseWeapon.insertDB(UseWeapon.java:131)
+	at weapon.UseWeapon.main(UseWeapon.java:68)
+ INFO 24 九月 15:06:44,351 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus('type','from','wdate','weaponid','amount') VALUES(?,?,?,?,?) =79
+ INFO 24 九月 15:07:41,508 -(              MoDBRW.java: 132) - execSQL: select weaponid ,count(weaponid) num from ( select substring(msg,charindex('n:',msg)+2,2) weaponid from user_event where msg like ? and server_date between  ? and ? ) a group by weaponid  =1247
+ INFO 24 九月 15:07:42,009 -(              MoDBRW.java: 132) - execSQL: select weaponid ,count(weaponid) num from ( select substring(msg,charindex('n:',msg)+2,2) weaponid from user_event where msg like ? and server_date between  ? and ? ) a group by weaponid  =498
+ INFO 24 九月 15:07:42,498 -(              MoDBRW.java: 132) - execSQL: select itemid,itemAmount from shopitem where itemtype='weapon' =488
+ INFO 24 九月 15:07:43,191 -(              MoDBRW.java: 132) - execSQL: select substring(weaponid,1,charindex(':',weaponid)-1) weaponid ,itemid from ( select  substring(msg,charindex(':',msg)+1,3) weaponid,  		  substring(msg,charindex('.',msg)+3,charindex('/,',msg)-charindex('.',msg)-3) itemid from user_event where msg like 'action=buyWeaponByC%' and server_date between ? and ? ) a  =692
+ INFO 24 九月 15:07:43,834 -(              MoDBRW.java: 132) - execSQL: select weaponid ,count(weaponid) num from ( select substring(msg,charindex(':',msg)+1,2) weaponid from user_event where msg like 'action=buyWeaponByG%' and server_date between ? and ? ) a group by weaponid  =639
+ INFO 24 九月 15:07:44,357 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus([type],[from],[wdate],[weaponid],[amount]) VALUES(?,?,?,?,?) =523
+ INFO 24 九月 15:07:44,543 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus([type],[from],[wdate],[weaponid],[amount]) VALUES(?,?,?,?,?) =185
+ INFO 24 九月 15:07:44,702 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus([type],[from],[wdate],[weaponid],[amount]) VALUES(?,?,?,?,?) =159
+ INFO 24 九月 15:07:44,865 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus([type],[from],[wdate],[weaponid],[amount]) VALUES(?,?,?,?,?) =163
+ INFO 24 九月 15:07:45,024 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus([type],[from],[wdate],[weaponid],[amount]) VALUES(?,?,?,?,?) =158
+ INFO 24 九月 15:07:45,228 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus([type],[from],[wdate],[weaponid],[amount]) VALUES(?,?,?,?,?) =204
+ INFO 24 九月 15:07:45,403 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus([type],[from],[wdate],[weaponid],[amount]) VALUES(?,?,?,?,?) =175
+ INFO 24 九月 15:07:45,567 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus([type],[from],[wdate],[weaponid],[amount]) VALUES(?,?,?,?,?) =163
+ INFO 24 九月 15:07:45,739 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus([type],[from],[wdate],[weaponid],[amount]) VALUES(?,?,?,?,?) =171
+ INFO 24 九月 15:07:45,921 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus([type],[from],[wdate],[weaponid],[amount]) VALUES(?,?,?,?,?) =181
+ INFO 24 九月 15:07:46,091 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus([type],[from],[wdate],[weaponid],[amount]) VALUES(?,?,?,?,?) =169
+ INFO 24 九月 15:07:46,283 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus([type],[from],[wdate],[weaponid],[amount]) VALUES(?,?,?,?,?) =192
+ INFO 24 九月 15:07:46,465 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus([type],[from],[wdate],[weaponid],[amount]) VALUES(?,?,?,?,?) =181
+ INFO 24 九月 15:07:46,638 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus([type],[from],[wdate],[weaponid],[amount]) VALUES(?,?,?,?,?) =172
+ INFO 24 九月 15:07:46,807 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus([type],[from],[wdate],[weaponid],[amount]) VALUES(?,?,?,?,?) =169
+ INFO 24 九月 15:07:46,965 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus([type],[from],[wdate],[weaponid],[amount]) VALUES(?,?,?,?,?) =157
+ INFO 24 九月 15:07:47,141 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus([type],[from],[wdate],[weaponid],[amount]) VALUES(?,?,?,?,?) =176
+ INFO 24 九月 15:07:47,311 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus([type],[from],[wdate],[weaponid],[amount]) VALUES(?,?,?,?,?) =169
+ INFO 24 九月 15:07:47,922 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus([type],[from],[wdate],[weaponid],[amount]) VALUES(?,?,?,?,?) =610
+ INFO 24 九月 15:07:48,102 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus([type],[from],[wdate],[weaponid],[amount]) VALUES(?,?,?,?,?) =180
+ INFO 24 九月 15:07:48,275 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus([type],[from],[wdate],[weaponid],[amount]) VALUES(?,?,?,?,?) =173
+ INFO 24 九月 15:07:48,454 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus([type],[from],[wdate],[weaponid],[amount]) VALUES(?,?,?,?,?) =179
+ INFO 24 九月 15:07:48,642 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus([type],[from],[wdate],[weaponid],[amount]) VALUES(?,?,?,?,?) =187
+ INFO 24 九月 15:07:48,843 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus([type],[from],[wdate],[weaponid],[amount]) VALUES(?,?,?,?,?) =200
+ INFO 24 九月 15:07:49,024 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus([type],[from],[wdate],[weaponid],[amount]) VALUES(?,?,?,?,?) =180
+ INFO 24 九月 15:07:49,206 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus([type],[from],[wdate],[weaponid],[amount]) VALUES(?,?,?,?,?) =181
+ INFO 24 九月 15:07:49,371 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus([type],[from],[wdate],[weaponid],[amount]) VALUES(?,?,?,?,?) =164
+ INFO 24 九月 15:07:49,543 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus([type],[from],[wdate],[weaponid],[amount]) VALUES(?,?,?,?,?) =171
+ INFO 24 九月 15:07:49,716 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus([type],[from],[wdate],[weaponid],[amount]) VALUES(?,?,?,?,?) =172
+ INFO 24 九月 15:07:49,893 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus([type],[from],[wdate],[weaponid],[amount]) VALUES(?,?,?,?,?) =177
+ INFO 24 九月 15:07:50,073 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus([type],[from],[wdate],[weaponid],[amount]) VALUES(?,?,?,?,?) =179
+ INFO 24 九月 15:07:50,252 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus([type],[from],[wdate],[weaponid],[amount]) VALUES(?,?,?,?,?) =178
+ INFO 24 九月 15:07:50,424 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus([type],[from],[wdate],[weaponid],[amount]) VALUES(?,?,?,?,?) =172
+ INFO 24 九月 15:07:50,603 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus([type],[from],[wdate],[weaponid],[amount]) VALUES(?,?,?,?,?) =179
+ INFO 24 九月 15:07:50,797 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus([type],[from],[wdate],[weaponid],[amount]) VALUES(?,?,?,?,?) =193
+ INFO 24 九月 15:07:50,971 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus([type],[from],[wdate],[weaponid],[amount]) VALUES(?,?,?,?,?) =174
+ INFO 24 九月 15:07:51,144 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus([type],[from],[wdate],[weaponid],[amount]) VALUES(?,?,?,?,?) =172
+ INFO 24 九月 15:07:51,316 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus([type],[from],[wdate],[weaponid],[amount]) VALUES(?,?,?,?,?) =171
+ INFO 24 九月 15:07:51,491 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus([type],[from],[wdate],[weaponid],[amount]) VALUES(?,?,?,?,?) =174
+ INFO 24 九月 15:07:51,651 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus([type],[from],[wdate],[weaponid],[amount]) VALUES(?,?,?,?,?) =159
+ INFO 24 九月 15:07:51,823 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus([type],[from],[wdate],[weaponid],[amount]) VALUES(?,?,?,?,?) =172
+ INFO 24 九月 15:07:52,006 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus([type],[from],[wdate],[weaponid],[amount]) VALUES(?,?,?,?,?) =182
+ INFO 24 九月 15:07:52,171 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus([type],[from],[wdate],[weaponid],[amount]) VALUES(?,?,?,?,?) =165
+ INFO 24 九月 15:07:52,360 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus([type],[from],[wdate],[weaponid],[amount]) VALUES(?,?,?,?,?) =189
+ INFO 24 九月 15:07:52,533 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus([type],[from],[wdate],[weaponid],[amount]) VALUES(?,?,?,?,?) =173
+ INFO 24 九月 15:07:52,698 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus([type],[from],[wdate],[weaponid],[amount]) VALUES(?,?,?,?,?) =165
+ INFO 24 九月 15:07:52,883 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus([type],[from],[wdate],[weaponid],[amount]) VALUES(?,?,?,?,?) =185
+ INFO 24 九月 15:07:53,061 -(              MoDBRW.java: 234) - execSQLUpdate: INSERT INTO weaponStatus([type],[from],[wdate],[weaponid],[amount]) VALUES(?,?,?,?,?) =177

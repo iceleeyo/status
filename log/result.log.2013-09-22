@@ -1,0 +1,24 @@
+ERROR 22 九月 17:51:47,014 -(              MoDBRW.java: 179) - execSQLQuery db(0) error
+com.microsoft.sqlserver.jdbc.SQLServerException: Invalid object name 'user_event'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.IOBuffer.processPackets(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.getPrepExecResponse(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PreparedStatementExecutionRequest.executeStatement(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.CancelableRequest.execute(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeRequest(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeQuery(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeQuery(DelegatingPreparedStatement.java:92)
+	at util.MoDBRW.doExecSQLQuery(MoDBRW.java:154)
+	at util.MoDBRW.execSQLQuery(MoDBRW.java:175)
+	at util.MoDBRW.execSQLQuery(MoDBRW.java:208)
+	at weapon.UseWeapon.getUseWeaponByAttack(UseWeapon.java:26)
+	at weapon.UseWeapon.main(UseWeapon.java:39)
+ INFO 22 九月 18:00:19,777 -(              MoDBRW.java: 132) - execSQL: select weaponid ,count(weaponid) num from ( select substring(msg,charindex('n:',msg)+2,2) weaponid from user_event where msg like ? and server_date between  ? and ? ) a group by weaponid  =671
+ INFO 22 九月 18:00:19,964 -(              MoDBRW.java: 132) - execSQL: select weaponid ,count(weaponid) num from ( select substring(msg,charindex('n:',msg)+2,2) weaponid from user_event where msg like ? and server_date between  ? and ? ) a group by weaponid  =187
+ INFO 22 九月 18:12:08,331 -(              MoDBRW.java: 132) - execSQL: select weaponid ,count(weaponid) num from ( select substring(msg,charindex('n:',msg)+2,2) weaponid from user_event where msg like ? and server_date between  ? and ? ) a group by weaponid  =561
+ INFO 22 九月 18:12:08,472 -(              MoDBRW.java: 132) - execSQL: select weaponid ,count(weaponid) num from ( select substring(msg,charindex('n:',msg)+2,2) weaponid from user_event where msg like ? and server_date between  ? and ? ) a group by weaponid  =141
+ INFO 22 九月 18:13:00,827 -(              MoDBRW.java: 132) - execSQL: select weaponid ,count(weaponid) num from ( select substring(msg,charindex('n:',msg)+2,2) weaponid from user_event where msg like ? and server_date between  ? and ? ) a group by weaponid  =624
+ INFO 22 九月 18:13:00,999 -(              MoDBRW.java: 132) - execSQL: select weaponid ,count(weaponid) num from ( select substring(msg,charindex('n:',msg)+2,2) weaponid from user_event where msg like ? and server_date between  ? and ? ) a group by weaponid  =172
+ INFO 22 九月 18:15:38,175 -(              MoDBRW.java: 132) - execSQL: select weaponid ,count(weaponid) num from ( select substring(msg,charindex('n:',msg)+2,2) weaponid from user_event where msg like ? and server_date between  ? and ? ) a group by weaponid  =1545
+ INFO 22 九月 18:15:38,800 -(              MoDBRW.java: 132) - execSQL: select weaponid ,count(weaponid) num from ( select substring(msg,charindex('n:',msg)+2,2) weaponid from user_event where msg like ? and server_date between  ? and ? ) a group by weaponid  =625
